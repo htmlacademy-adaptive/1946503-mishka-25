@@ -1,1 +1,3 @@
-// Начните писать стили здесь
+@use "./source/sass/blocks/common-styles.scss";
+@use "./source/sass/blocks/main-header.scss";
+@use "./blocks/hero-section.scss";
