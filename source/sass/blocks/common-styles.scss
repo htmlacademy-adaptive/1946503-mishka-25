@@ -15,18 +15,33 @@ body {
 }
 
 .title {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 53px;
   line-height: 57px;
+  color: #000000;
+  margin: 0;
 }
 
 .description {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 30px;
+  color: #444444;
+  margin: 0;
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  text-decoration: none;
 }
 

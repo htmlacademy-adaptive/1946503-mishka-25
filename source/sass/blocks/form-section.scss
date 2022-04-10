@@ -1,0 +1,35 @@
+.form-section {
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.legend-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63D1BB;
+}
+
+.form-section-type__label,
+.color-section-form__checkbox-label,
+.username-section-form__label {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.form-section-type__radio-list,
+.color-section-form__checkbox-list,
+.username-section-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+

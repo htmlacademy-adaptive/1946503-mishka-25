@@ -1,31 +1,15 @@
 .hero-section {
+  background-image: url(/source/img/hero-desktop.jpg);
+  background-repeat: no-repeat;
   width: 1150px;
   margin: 0 auto;
-  background-image: url(/source/img/hero-desktop.jpg);
-  position: relative;
-}
-
-.hero-section__wrapper {
-  width: 1050px;
-  margin: 0 auto;
-}
-
-.hero-nav {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 115px;
+  outline: 1px solid red;
 }
 
 .hero-nav__list {
-  margin: 0;
   padding: 0;
-  display: flex;
-}
-
-.hero-nav__item {
+  margin: 0;
   list-style-type: none;
-  padding-right: 50px;
 }
 
 .hero-nav__link {
@@ -47,48 +31,26 @@
   color: #444444;
 }
 
-.hero-title {
-  width: 700px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 355px;
-}
-
 .hero-card__list {
-  display: grid;
-  grid-template-columns: 525px 525px;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.hero-card__item {
-  background-color: #56C3B2;
-}
-
-.hero-card__item:first-child {
-  background-color: #63D1BB;
-}
-
 .hero-card__link {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  padding: 25px 36px;
-}
-
-.hero-card__product {
-  width: 137px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
-.hero-white-line {
-  position: absolute;
-  bottom: -20px;
-  right: 0;
+.hero-card__item {
+  background-color: #63D1BB;
+}
+
+.hero-card__item:nth-child(2n) {
+  background-color: #56C3B2;
 }

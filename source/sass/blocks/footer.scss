@@ -1,24 +1,22 @@
-.main-header {
-  background-color: #fff;
+.footer {
+  background-color: #F1F1F1;
   width: 1150px;
   margin: 0 auto;
   outline: 1px solid red;
 }
 
-.main-nav__list,
-.user-nav__list {
+.footer-social__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.main-nav__link,
-.user-nav__item {
+.footer-copyright {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 19px;
+  line-height: 18px;
   color: #000000;
   text-decoration: none;
 }
