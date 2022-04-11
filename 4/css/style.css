@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/source/fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/source/fonts/opensans.woff2") format("woff2");
+  font-display: swap;
+}
 body {
   box-sizing: border-box;
   margin: 0;
@@ -52,30 +66,247 @@ body {
   outline: 1px solid red;
 }
 
-.main-nav__list,
-.user-nav__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.main-nav__link,
-.user-nav__item {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-}
-
 .hero-section {
   background-image: url(/source/img/hero-desktop.jpg);
   background-repeat: no-repeat;
   width: 1150px;
   margin: 0 auto;
   outline: 1px solid red;
+}
+
+.about-us-section {
+  background-color: #fff;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.about-us-section__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-us-section__item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.contacts-section {
+  background-color: #fff;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.contacts-email__link {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #F1F1F1;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.footer__copyright {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.reviews-slider-section {
+  background-color: #fff;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.reviews__user {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+.reviews__user-usermail {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.weeks-product-section {
+  background-color: #fff;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.weeks-product-section__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #63D1BB;
+}
+
+.weeks-product-section__price {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.form-top {
+  background-color: #F1F1F1;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.form-section-type {
+  background-color: #fff;
+}
+
+.legend-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63D1BB;
+}
+
+.form-section-type__label,
+.color-section-form__checkbox-label,
+.username-section-form__label {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.form-section-type__radio-list,
+.color-section-form__checkbox-list,
+.username-section-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.color-section {
+  background-color: #F1F1F1;
+}
+
+.username-section {
+  background-color: #fff;
+}
+
+.contact-section {
+  background-color: #F1F1F1;
+}
+
+.wishes-section {
+  background-color: #fff;
+}
+
+.catalog-top {
+  background-color: #F1F1F1;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.product-card {
+  background-color: #fff;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.product-card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__link-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.product-card__link-parameters {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.product-card__price {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.production {
+  background-color: #fff;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.production__description-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.form-section {
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.footer-social__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .hero-nav__list {
@@ -127,247 +358,35 @@ body {
   background-color: #56C3B2;
 }
 
-.about-us-section {
-  background-color: #fff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.about-us-section__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.about-us-section__item {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.contacts-section {
-  background-color: #fff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.contacts-email__link {
-  text-decoration: none;
-}
-
-.footer {
-  background-color: #F1F1F1;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.footer-social__list {
+.user-nav__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.footer-copyright {
+.user-nav__item {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
+  font-size: 17px;
+  line-height: 24px;
   color: #000000;
   text-decoration: none;
 }
 
-.reviews-slider-section {
-  background-color: #fff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
-.reviews__user {
+.main-nav__link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-}
-.reviews__user-nickname {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
-  color: #444444;
-}
-
-.weeks-product-section {
-  background-color: #fff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.weeks-product-section__subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 17px;
-  text-transform: uppercase;
-  color: #63D1BB;
-}
-
-.poduct-table {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  color: #444444;
-}
-
-.weeks-product-section__price {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #444444;
-}
-
-.form-top {
-  background-color: #F1F1F1;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.form-section-type {
-  background-color: #fff;
-}
-
-.color-section {
-  background-color: #F1F1F1;
-}
-
-.username-section {
-  background-color: #fff;
-}
-
-.contact-section {
-  background-color: #F1F1F1;
-}
-
-.wishes-section {
-  background-color: #fff;
-}
-
-.catalog-top {
-  background-color: #F1F1F1;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.product-card__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.product-card__link {
   text-decoration: none;
-}
-
-.product-card__link-subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.product-card__link-parameters {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
-}
-
-.product-card__price {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.product-card {
-  background-color: #fff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.production {
-  background-color: #fff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.production-description__title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.form-section {
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid red;
-}
-
-.legend-title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #63D1BB;
-}
-
-.form-section-type__label,
-.color-section-form__checkbox-label,
-.username-section-form__label {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
-  color: #000000;
-}
-
-.form-section-type__radio-list,
-.color-section-form__checkbox-list,
-.username-section-form__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
