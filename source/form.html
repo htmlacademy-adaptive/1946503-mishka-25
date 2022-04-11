@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
@@ -95,7 +96,7 @@
 
     <form action="https://echo.htmlacademy.ru" class="form-section" method="post">
       <div class="container">
-        <p class="form-section__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="description form-section__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form-section-type">
           <legend class="legend-title form-section-type__legend">тип</legend>
           <ul class="form-section-type__radio-list">
@@ -164,14 +165,14 @@
           </fieldset>
         </div>
       </section>
-      <div class="contacts-section__wrapper">
-        <section class="contacts-section">
-          <fieldset class="contacts-section-form__phone">
-            <label for="phone-form" class="legend-title contacts-section-form__title-phone">тел</label>
+      <div class="contact-section__wrapper">
+        <section class="contact-section">
+          <fieldset class="contact-section-form__phone">
+            <label for="phone-form" class="legend-title contact-section-form__title-phone">тел</label>
             <input type="tel" name="phone" class="phone-elements-button" id="phone-form" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </fieldset>
-          <fieldset class="contacts-section-form__email">
-            <label for="email-form" class="legend-title contacts-section-form__title-email">email</label>
+          <fieldset class="contact-section-form__email">
+            <label for="email-form" class="legend-title contact-section-form__title-email">e-mail</label>
             <input type="email" name="email" class="email-elements-button" id="email-form" placeholder="Ваш Email*" required>
           </fieldset>
         </section>
@@ -182,7 +183,7 @@
             <legend class="legend-title wishes-section-form__title">доп</legend>
             <textarea name="wishes-text" cols="30" rows="10"></textarea>
             <button type="submit" class="button wishes-section-button">отправить заказ</button>
-            <span class="forms-desription">*Поля обязательны для заполнения</span>
+            <span class="description forms-desription">*Поля обязательны для заполнения</span>
           </fieldset>
         </div>
       </section>
@@ -239,8 +240,8 @@
         </li>
       </ul>
     </div>
-    <a href="#" class="footer-copyright">
-      <span class="footer-copyright__info">Разработано</span>
+    <a href="#" class="footer__copyright">
+      <span class="footer__copyright-info">Разработано</span>
       <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.7539 0.0444336H13.6543L0.208984 1.44443V26.1444L13.6543 34.1444L27 26.1444V1.44443L13.7539 0.0444336ZM25.1077 12.1444L13.6543 5.34443V5.24443H13.5547L13.4551 5.14443V5.24443L2.10129 12.1444V3.14443L13.5547 1.94443L25.1077 3.14443V12.1444ZM13.5547 6.84443L25.0081 13.5444L20.5263 16.1444L13.4551 11.9444V13.3444L19.3312 16.8444L18.4349 17.3444L13.4551 14.3444V15.7444L17.2397 18.0444L16.443 18.5444L13.4551 16.7444V18.1444L15.3474 19.2444L13.5547 20.3444L2.20088 13.6444L13.5547 6.84443ZM2.10129 15.1444L13.4551 21.9444V22.9444L5.58711 18.2444V19.6444L13.5547 24.4444V25.5444L5.58711 20.8444V22.2444L13.5547 27.0444L21.6219 22.1444V16.9444L25.0081 14.9444V24.9444L13.5547 31.8444L2.10129 25.0444V15.1444Z" fill="#63D1BB"/>
         </svg>

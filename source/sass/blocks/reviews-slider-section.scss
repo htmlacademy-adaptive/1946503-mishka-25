@@ -1,0 +1,24 @@
+.reviews-slider-section {
+  background-color: #ffffff;
+  width: 1150px;
+  margin: 0 auto;
+  outline: 1px solid #ff0000;
+}
+
+.reviews__user {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  &-usermail {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+  }
+}
