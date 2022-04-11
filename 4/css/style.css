@@ -60,25 +60,25 @@ body {
 }
 
 .main-header {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .hero-section {
-  background-image: url(/source/img/hero-desktop.jpg);
+  background-image: url("/source/img/hero-desktop.jpg");
   background-repeat: no-repeat;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .about-us-section {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .about-us-section__list {
@@ -97,10 +97,10 @@ body {
 }
 
 .contacts-section {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .contacts-email__link {
@@ -108,10 +108,10 @@ body {
 }
 
 .footer {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .footer__copyright {
@@ -125,10 +125,10 @@ body {
 }
 
 .reviews-slider-section {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .reviews__user {
@@ -149,10 +149,10 @@ body {
 }
 
 .weeks-product-section {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .weeks-product-section__subtitle {
@@ -162,7 +162,7 @@ body {
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
 }
 
 .weeks-product-section__price {
@@ -175,14 +175,14 @@ body {
 }
 
 .form-top {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .form-section-type {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .legend-title {
@@ -192,7 +192,7 @@ body {
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #63D1BB;
+  color: #63d1bb;
 }
 
 .form-section-type__label,
@@ -215,33 +215,33 @@ body {
 }
 
 .color-section {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .username-section {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .contact-section {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .wishes-section {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .catalog-top {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .product-card {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .product-card__list {
@@ -282,10 +282,10 @@ body {
 }
 
 .production {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .production__description-title {
@@ -300,7 +300,7 @@ body {
 .form-section {
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .footer-social__list {
@@ -346,16 +346,16 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .hero-card__item {
-  background-color: #63D1BB;
+  background-color: #63d1bb;
 }
 
 .hero-card__item:nth-child(2n) {
-  background-color: #56C3B2;
+  background-color: #56c3b2;
 }
 
 .user-nav__list {
