@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .hero-nav__link {
@@ -21,4 +25,8 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }

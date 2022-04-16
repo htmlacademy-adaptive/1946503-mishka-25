@@ -1,0 +1,11 @@
+.header-logo__link {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header-logo__link-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

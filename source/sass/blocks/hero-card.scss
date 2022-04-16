@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .hero-card__link {
@@ -16,6 +20,10 @@
 
 .hero-card__item {
   background-color: #63d1bb;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .hero-card__item:nth-child(2n) {
