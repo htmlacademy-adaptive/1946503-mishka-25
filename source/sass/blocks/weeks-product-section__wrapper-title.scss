@@ -1,0 +1,11 @@
+.weeks-product-section__wrapper-title {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1150px) {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+}

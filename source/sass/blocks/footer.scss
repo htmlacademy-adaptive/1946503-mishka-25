@@ -3,6 +3,10 @@
   width: 1150px;
   margin: 0 auto;
   outline: 1px solid #ff0000;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .footer__copyright {

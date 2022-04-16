@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -43,4 +48,5 @@ body {
   text-transform: uppercase;
   color: #444444;
   text-decoration: none;
+  display: inline-block;
 }
