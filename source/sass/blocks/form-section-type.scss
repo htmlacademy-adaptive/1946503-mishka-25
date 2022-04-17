@@ -1,5 +1,9 @@
 .form-section-type {
   background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .legend-title {
@@ -10,6 +14,25 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.form-section-type__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .form-section-type__label,

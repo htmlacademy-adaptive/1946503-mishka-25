@@ -1,0 +1,29 @@
+.contact-section-form__legend-email {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.contact-section-form__email-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}

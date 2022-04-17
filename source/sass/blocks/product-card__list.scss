@@ -1,0 +1,16 @@
+.product-card__list {
+  @media (min-width: 1150px) {
+    display: flex;
+  }
+}
+
+.product-card__item {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  @media (min-width: 1150px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
