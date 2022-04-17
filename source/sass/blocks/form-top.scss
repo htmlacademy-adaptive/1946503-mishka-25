@@ -1,8 +1,11 @@
 .form-top {
   background-color: #f1f1f1;
+  outline: 1px solid #ff0000;
+}
+
+.form-top__wrapper {
   width: 1150px;
   margin: 0 auto;
-  outline: 1px solid #ff0000;
 }
 
 .border-bottom-image {
