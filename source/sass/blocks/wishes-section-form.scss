@@ -1,0 +1,29 @@
+.wishes-section-form {
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.wishes-section-form__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.wishes-section-form__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

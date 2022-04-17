@@ -1,12 +1,6 @@
 .footer {
   background-color: #f1f1f1;
-  width: 1150px;
-  margin: 0 auto;
   outline: 1px solid #ff0000;
-
-  @media (min-width: 768px) {
-    display: flex;
-  }
 }
 
 .footer__copyright {
@@ -17,4 +11,13 @@
   line-height: 18px;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-wrapper {
+  width: 1050px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }

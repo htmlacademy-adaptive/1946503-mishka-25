@@ -1,0 +1,27 @@
+.color-section-form {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.color-section-form__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.color-section-form__checkbox-list {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

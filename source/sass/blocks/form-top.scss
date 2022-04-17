@@ -4,3 +4,9 @@
   margin: 0 auto;
   outline: 1px solid #ff0000;
 }
+
+.border-bottom-image {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
