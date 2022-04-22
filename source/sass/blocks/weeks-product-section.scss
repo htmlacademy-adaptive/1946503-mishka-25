@@ -1,8 +1,11 @@
 .weeks-product-section {
   background-color: #ffffff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid #ff0000;
+  margin-bottom: 25px;
+}
+
+.weeks-product-section__wrapper {
+  padding: 30px 30px 0 30px;
+  margin-bottom: 35px;
 }
 
 .weeks-product-section__subtitle {
@@ -20,7 +23,31 @@
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 24px;
   color: #444444;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: 1050px) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+.week-product-section__images {
+  margin-bottom: 25px;
+}
+
+.weeks-product-section__button {
+  padding: 14px 83px;
+  border: 2px solid #444444;
+  display: block;
+  max-width: 90px;
+  margin: 0 auto;
 }

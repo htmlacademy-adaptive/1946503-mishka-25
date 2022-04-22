@@ -1,7 +1,13 @@
 .hero-section {
   background-image: url("/source/img/hero-desktop.jpg");
   background-repeat: no-repeat;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid #ff0000;
+}
+
+.hero-title {
+  padding: 73px 20px 120px;
+  text-align: center;
+}
+
+.hero-white-line {
+  display: none;
 }

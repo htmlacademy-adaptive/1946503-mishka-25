@@ -23,20 +23,39 @@ img {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 53px;
-  line-height: 57px;
+  font-size: 25px;
+  line-height: 30px;
   color: #000000;
   margin: 0;
+
+  @media (min-width: 1050px) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+    color: #000000;
+    margin: 0;
+  }
 }
 
 .description {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 24px;
   color: #444444;
-  margin: 0;
+
+  @media (min-width: 1050px) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+    margin: 0;
+  }
 }
 
 .button {
@@ -49,4 +68,22 @@ img {
   color: #444444;
   text-decoration: none;
   display: inline-block;
+}
+
+.container {
+  outline: 1px solid #0000ff;
+  width: 90%;
+  min-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1150px) {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
