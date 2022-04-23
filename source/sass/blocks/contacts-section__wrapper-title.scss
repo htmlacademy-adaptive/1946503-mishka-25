@@ -1,4 +1,6 @@
 .contacts-section__wrapper-title {
+  margin-bottom: 28px;
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -10,7 +12,5 @@
 }
 
 .contacts-section__title-image {
-  @media (max-width: 767px) {
-    display: none;
-  }
+  display: none;
 }

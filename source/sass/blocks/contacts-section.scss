@@ -1,7 +1,18 @@
 .contacts-section {
   background-color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .contacts-email__link {
   text-decoration: none;
+}
+
+.contacts-section__wrapper {
+  padding: 0 30px;
+}
+
+.contacts-section-button {
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 14px 53px;
 }
