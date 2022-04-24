@@ -1,11 +1,30 @@
 .weeks-product-section {
   background-color: #ffffff;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .weeks-product-section__wrapper {
   padding: 30px 30px 0 30px;
-  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    padding: 30px 30px 0 0;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 0;
+  }
+}
+
+.weeks-product-section__description-wrapper {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1150px) {
+    width: 300px;
+    margin-left: 160px;
+  }
 }
 
 .weeks-product-section__subtitle {
@@ -17,6 +36,15 @@
   text-transform: uppercase;
   color: #63d1bb;
   display: block;
+
+  @media (min-width: 768px) {
+    width: 75px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .weeks-product-section__price {
@@ -30,18 +58,32 @@
   text-align: center;
   margin-bottom: 25px;
 
-  @media (min-width: 1050px) {
+  @media (min-width: 1150px) {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #444444;
+    margin-bottom: 30px;
   }
 }
 
 .week-product-section__images {
   margin-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 334px;
+    margin-bottom: -5px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 525px;
+  }
 }
 
 .weeks-product-section__button {

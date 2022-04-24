@@ -1,9 +1,11 @@
 .contacts-section__wrapper-title {
   margin-bottom: 28px;
+  padding: 0 30px;
 
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: 1150px) {
@@ -13,4 +15,8 @@
 
 .contacts-section__title-image {
   display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

@@ -6,4 +6,13 @@
   font-size: 14px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    text-align: end;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 150px;
+  }
 }

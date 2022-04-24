@@ -1,5 +1,13 @@
 .week-product-section__parameters {
   margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 110px;
+  }
 }
 
 .product-table__description {

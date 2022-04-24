@@ -1,11 +1,22 @@
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
 .hero-nav__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: none;
 
-  @media (max-width: 767px) {
-    display: none;
+  @media (min-width: 768px) {
+    display: flex;
   }
+}
+
+.hero-nav__item {
+  padding-right: 20px;
 }
 
 .hero-nav__link {
@@ -25,8 +36,9 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+  display: none;
 
-  @media (max-width: 767px) {
-    display: none;
+  @media (min-width: 768px) {
+    display: block;
   }
 }

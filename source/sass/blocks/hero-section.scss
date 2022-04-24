@@ -1,13 +1,39 @@
 .hero-section {
   background-image: url("/source/img/hero-desktop.jpg");
   background-repeat: no-repeat;
+  position: relative;
+
+  @media (min-width: 768px) {
+    background-position: top;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 54px;
+  }
 }
 
 .hero-title {
   padding: 73px 20px 120px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 460px;
+    padding: 109px 0 325px 0;
+    margin: 0 auto;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .hero-white-line {
   display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+  }
 }

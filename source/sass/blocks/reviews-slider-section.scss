@@ -1,6 +1,10 @@
 .reviews-slider-section {
   background-color: #ffffff;
   margin-bottom: 38px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 68px;
+  }
 }
 
 .reviews__user {

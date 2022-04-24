@@ -3,6 +3,17 @@
   margin: 0 auto;
   padding: 30px 58px;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: 1150px) {
+    width: 13%;
+  }
 }
 
 .footer-social__list {

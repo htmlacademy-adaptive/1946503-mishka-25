@@ -7,6 +7,15 @@
   font-size: 14px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1150px) {
+    width: 60%;
+    padding-left: 165px;
+  }
 }
 
 .contacts-email__link {

@@ -1,3 +1,7 @@
 .main-header {
   background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    border-bottom: 1px solid #ececec;
+  }
 }

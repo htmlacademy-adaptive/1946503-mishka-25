@@ -4,10 +4,21 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
   }
 
   @media (min-width: 1150px) {
     justify-content: flex-end;
     flex-direction: row-reverse;
+    margin: 0;
+    padding-top: 85px;
+    margin-bottom: 35px;
+  }
+}
+
+.weeks-product-section__title {
+  @media (min-width: 1150px) {
+    z-index: 1;
   }
 }
