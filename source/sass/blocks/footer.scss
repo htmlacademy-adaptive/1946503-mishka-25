@@ -1,6 +1,5 @@
 .footer {
   background-color: #f1f1f1;
-  outline: 1px solid #ff0000;
 }
 
 .footer__copyright {
@@ -11,13 +10,4 @@
   line-height: 18px;
   color: #000000;
   text-decoration: none;
-}
-
-.footer-wrapper {
-  width: 1050px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    display: flex;
-  }
 }

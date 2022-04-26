@@ -16,6 +16,18 @@
   line-height: 30px;
   color: #ffffff;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 30px;
+
+  @media (min-width: 768px) {
+    padding: 28px 30px;
+  }
+}
+
+.hero-card__product {
+  display: block;
+  width: 130px;
 }
 
 .hero-card__item {

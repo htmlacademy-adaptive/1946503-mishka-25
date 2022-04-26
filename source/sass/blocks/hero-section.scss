@@ -1,7 +1,46 @@
 .hero-section {
-  background-image: url("/source/img/hero-desktop.jpg");
+  background-image: url("/source/img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid #ff0000;
+  position: relative;
+  display: block;
+  background-position: center top;
+  background-color: #f9f9f9f9;
+
+  @media (min-width: 768px) {
+    background-image: url("/source/img/hero-tablet.jpg");
+    background-position: top;
+    background-color: #f9f9f9f9;
+  }
+
+  @media (min-width: 1150px) {
+    background-image: url("/source/img/hero-desktop.jpg");
+    margin-bottom: 54px;
+    background-color: #f9f9f9f9;
+  }
+}
+
+.hero-title {
+  padding: 73px 20px 120px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 460px;
+    padding: 109px 0 325px 0;
+    margin: 0 auto;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.hero-white-line {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
 }

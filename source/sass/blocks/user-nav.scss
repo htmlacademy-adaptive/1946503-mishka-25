@@ -1,3 +1,9 @@
+.user-nav {
+  @media (min-width: 768px) {
+    order: 4;
+  }
+}
+
 .user-nav__list {
   padding: 0;
   margin: 0;
@@ -5,7 +11,7 @@
   display: none;
 
   @media (min-width: 768px) {
-    display: block;
+    display: flex;
   }
 }
 
@@ -17,4 +23,15 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    border-left: 1px solid #ececec;
+  }
+}
+
+.user-nav__link {
+  @media (min-width: 768px) {
+    display: inline-block;
+    padding: 30px 32px;
+  }
 }

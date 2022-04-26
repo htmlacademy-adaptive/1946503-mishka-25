@@ -1,6 +1,7 @@
 .main-header {
   background-color: #ffffff;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid #ff0000;
+
+  @media (min-width: 768px) {
+    border-bottom: 1px solid #ececec;
+  }
 }
