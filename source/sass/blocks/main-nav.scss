@@ -57,8 +57,6 @@
 }
 
 .header-logo {
-  margin-left: 50px;
-
   @media (min-width: 768px) {
     order: 1;
     margin: 0;
@@ -68,4 +66,8 @@
     order: 2;
     margin: 0;
   }
+}
+
+.mobile-nav--nojs {
+  display: none;
 }
