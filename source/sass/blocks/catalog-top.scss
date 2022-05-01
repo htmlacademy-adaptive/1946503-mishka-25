@@ -1,6 +1,24 @@
 .catalog-top {
   background-color: #f1f1f1;
-  width: 1150px;
-  margin: 0 auto;
-  outline: 1px solid #ff0000;
+  min-height: 177px;
+  margin-bottom: 30px;
+
+  @media (min-width: 1150px) {
+    margin-bottom: 110px;
+  }
+}
+
+.catalog-top__title {
+  padding-top: 53px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-bottom: 75px;
+  }
+}
+
+.border-bottom-image {
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

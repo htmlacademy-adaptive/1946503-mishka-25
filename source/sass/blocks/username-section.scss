@@ -1,4 +1,18 @@
+.username-section {
+  margin-bottom: 12px;
+
+  @media (min-width: 1150px) {
+    margin: 0;
+  }
+}
+
 .username-section__wrapper {
-  width: 1150px;
+  width: 90%;
+  min-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: 1150px) {
+    width: 80%;
+    max-width: 1150px;
+  }
 }

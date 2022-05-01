@@ -9,7 +9,7 @@
 </head>
 <body class="page-body">
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="container main-header__container">
       <div class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -79,16 +79,40 @@
             </li>
           </ul>
         </div>
-        <div class="mobile-nav">
-          <button class="mobile-nav__button">
-            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
-              <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
-              <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
-              </svg>
-          </button>
-        </div>
       </div>
+      <nav class="mobile-nav mobile-nav--closed mobile-nav--nojs">
+        <button class="mobile-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="mobile-nav__wrapper">
+          <ul class="mobile-nav__list site-list">
+            <li class="site-list__item">
+              <a>
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                <svg class="mobile-nav__opened-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+                  </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                <svg class="mobile-nav__opened-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                  </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -106,13 +130,13 @@
           </ul>
           <span class="hero-delivery-info">Бесплатная доставка по России</span>
         </div>
-        <div class="catalog-top__title-wrapper">
-          <h1 class="title catalog-top__title">Вязание на заказ</h1>
+        <div class="form-top__title-wrapper">
+          <h1 class="title form-top__title">Вязание на заказ</h1>
         </div>
-        <svg class="border-bottom-image" width="1150" height="34" viewBox="0 0 1150 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1168.8 0C1153.15 0 1153.15 14 1137.61 14C1122.07 14 1121.96 0 1106.41 0C1090.87 0 1090.76 14 1075.22 14C1059.57 14 1059.57 0 1043.91 0C1028.26 0 1028.26 14 1012.72 14C997.065 14 997.065 0 981.522 0C965.87 0 965.87 14 950.326 14C934.783 14 934.348 0 918.804 0C903.152 0 903.152 14 887.609 14C872.065 14 871.848 0 856.304 0C840.652 0 840.652 14 825.109 14C809.456 14 809.456 0 793.804 0C778.152 0 778.152 14 762.609 14C746.956 14 746.957 0 731.413 0C715.87 0 715.652 14 700 14C684.348 14 684.348 0 668.804 0C653.152 0 653.152 14 637.609 14C621.956 14 621.956 0 606.304 0C590.652 0 590.652 14 575.109 14C559.456 14 559.457 0 543.913 0C528.261 0 528.261 14 512.717 14C497.065 14 497.065 0 481.522 0C465.87 0 465.87 14 450.217 14C434.565 14 434.565 0 418.913 0C403.261 0 403.261 14 387.609 14C371.957 14 371.957 0 356.304 0C340.652 0 340.652 14 325 14C309.348 14 309.348 0 293.696 0C278.043 0 278.043 14 262.391 14C246.739 14 246.739 0 231.087 0C215.435 0 215.435 14 199.891 14C184.239 14 184.239 0 168.587 0C152.935 0 152.935 14 137.283 14C121.63 14 121.63 0 105.978 0C90.3261 0 90.3261 14 74.6739 14C59.0217 14 59.0217 0 43.3696 0C28.1522 0 28.1522 14 12.5 14C-3.15218 14 -3.15218 0 -18.6957 0C-34.2391 0 -34.3478 14 -50 14V34H1200V14C1184.35 14 1184.35 0 1168.8 0Z" fill="white"/>
-          </svg>
       </div>
+      <svg class="border-bottom-image" width="100%" height="100%" viewBox="0 0 1150 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1168.8 0C1153.15 0 1153.15 14 1137.61 14C1122.07 14 1121.96 0 1106.41 0C1090.87 0 1090.76 14 1075.22 14C1059.57 14 1059.57 0 1043.91 0C1028.26 0 1028.26 14 1012.72 14C997.065 14 997.065 0 981.522 0C965.87 0 965.87 14 950.326 14C934.783 14 934.348 0 918.804 0C903.152 0 903.152 14 887.609 14C872.065 14 871.848 0 856.304 0C840.652 0 840.652 14 825.109 14C809.456 14 809.456 0 793.804 0C778.152 0 778.152 14 762.609 14C746.956 14 746.957 0 731.413 0C715.87 0 715.652 14 700 14C684.348 14 684.348 0 668.804 0C653.152 0 653.152 14 637.609 14C621.956 14 621.956 0 606.304 0C590.652 0 590.652 14 575.109 14C559.456 14 559.457 0 543.913 0C528.261 0 528.261 14 512.717 14C497.065 14 497.065 0 481.522 0C465.87 0 465.87 14 450.217 14C434.565 14 434.565 0 418.913 0C403.261 0 403.261 14 387.609 14C371.957 14 371.957 0 356.304 0C340.652 0 340.652 14 325 14C309.348 14 309.348 0 293.696 0C278.043 0 278.043 14 262.391 14C246.739 14 246.739 0 231.087 0C215.435 0 215.435 14 199.891 14C184.239 14 184.239 0 168.587 0C152.935 0 152.935 14 137.283 14C121.63 14 121.63 0 105.978 0C90.3261 0 90.3261 14 74.6739 14C59.0217 14 59.0217 0 43.3696 0C28.1522 0 28.1522 14 12.5 14C-3.15218 14 -3.15218 0 -18.6957 0C-34.2391 0 -34.3478 14 -50 14V34H1200V14C1184.35 14 1184.35 0 1168.8 0Z" fill="white"/>
+        </svg>
     </section>
 
     <form action="https://echo.htmlacademy.ru" class="form-section" method="post">
@@ -123,12 +147,16 @@
           <legend class="legend-title form-section-type__legend">тип</legend>
           <ul class="form-section-type__radio-list">
             <li class="form-section-type__radio-elements">
-              <input type="radio" name="type-radio-button" class="type-radio-button" id="type-accessory-button" checked>
-              <label class="form-section-type__label" for="type-accessory-button">Аксессуар для интерьера</label>
+              <label class="form-section-type__label" for="type-accessory-button">Аксессуар для интерьера
+                <input type="radio" name="type-radio-button" class="visually-hidden type-radio-button" id="type-accessory-button" checked>
+              <span class="radio__control-mark"></span>
+              </label>
             </li>
             <li class="form-section-type__radio-elements">
-              <input type="radio" name="type-radio-button" class="type-radio-button" id="type-toys-button">
-              <label class="form-section-type__label" for="type-toys-button">Детская игрушка</label>
+              <label class="form-section-type__label" for="type-toys-button">Детская игрушка
+                <input type="radio" name="type-radio-button" class="visually-hidden type-radio-button" id="type-toys-button">
+              <span class="radio__control-mark"></span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -140,28 +168,40 @@
             <legend class="legend-title color-section-form__legend">цвет</legend>
             <ul class="color-section-form__checkbox-list">
               <li class="color-section-form__checkbox-elements">
-                <input type="checkbox" name="checkbox-color-white" class="checkbox-elements-button" id="color-white" checked>
-                <label for="color-white" class="color-section-form__checkbox-label">Белый</label>
+                <label for="color-white" class="color-section-form__checkbox-label">Белый
+                  <input type="checkbox" name="checkbox-color-white" class="visually-hidden checkbox-elements-button" id="color-white" checked>
+                  <span class="checkbox__control-mark"></span>
+                </label>
               </li>
               <li class="color-section-form__checkbox-elements">
-                <input type="checkbox" name="checkbox-color-silver" class="checkbox-elements-button" id="color-silver" checked>
-                <label for="color-silver" class="color-section-form__checkbox-label">Серый</label>
+                <label for="color-silver" class="color-section-form__checkbox-label">Серый
+                  <input type="checkbox" name="checkbox-color-silver" class="visually-hidden checkbox-elements-button" id="color-silver" checked>
+                  <span class="checkbox__control-mark"></span>
+                </label>
               </li>
               <li class="color-section-form__checkbox-elements">
-                <input type="checkbox" name="checkbox-color-tiffany" class="checkbox-elements-button" id="color-tiffany">
-                <label for="color-tiffany" class="color-section-form__checkbox-label">Тиффани</label>
+                <label for="color-tiffany" class="color-section-form__checkbox-label">Тиффани
+                  <input type="checkbox" name="checkbox-color-tiffany" class="visually-hidden checkbox-elements-button" id="color-tiffany">
+                  <span class="checkbox__control-mark"></span>
+                </label>
               </li>
               <li class="color-section-form__checkbox-elements">
-                <input type="checkbox" name="checkbox-color-black" class="checkbox-elements-button" id="color-black">
-                <label for="color-black" class="color-section-form__checkbox-label">Черный</label>
+                <label for="color-black" class="color-section-form__checkbox-label">Черный
+                  <input type="checkbox" name="checkbox-color-black" class="visually-hidden checkbox-elements-button" id="color-black">
+                  <span class="checkbox__control-mark"></span>
+                </label>
               </li>
               <li class="color-section-form__checkbox-elements">
-                <input type="checkbox" name="checkbox-color-pink" class="checkbox-elements-button" id="color-pink">
-                <label for="color-pink" class="color-section-form__checkbox-label">Розовый</label>
+                <label for="color-pink" class="color-section-form__checkbox-label">Розовый
+                  <input type="checkbox" name="checkbox-color-pink" class="visually-hidden checkbox-elements-button" id="color-pink">
+                  <span class="checkbox__control-mark"></span>
+                </label>
               </li>
               <li class="color-section-form__checkbox-elements">
-                <input type="checkbox" name="checkbox-color-orange" class="checkbox-elements-button" id="color-orange">
-                <label for="color-orange" class="color-section-form__checkbox-label">Оранжевый</label>
+                <label for="color-orange" class="color-section-form__checkbox-label">Оранжевый
+                  <input type="checkbox" name="checkbox-color-orange" class="visually-hidden checkbox-elements-button" id="color-orange">
+                  <span class="checkbox__control-mark"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -206,13 +246,15 @@
       <section class="wishes-section">
         <div class="wishes-section__wrapper">
           <fieldset class="wishes-section-form">
-            <span class="legend-title wishes-section-form__title">доп</span>
             <div class="wishes-section-form__wrapper">
+              <span class="legend-title wishes-section-form__title">доп</span>
             <legend class="legend-title wishes-section-form__legend">доп</legend>
-            <textarea name="wishes-text" cols="30" rows="10"></textarea>
-              <button type="submit" class="button wishes-section-button">отправить заказ</button>
+            <textarea class="wishes-section-form__textarea" name="wishes-text" cols="30" rows="10"></textarea>
+          </div>
+          <div class="wishes-section-button__wrapper">
             <span class="description forms-desription">*Поля обязательны для заполнения</span>
-            </div>
+            <button type="submit" class="button wishes-section-button">отправить заказ</button>
+          </div>
           </fieldset>
         </div>
       </section>
@@ -221,7 +263,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-wrapper">
+    <div class="container footer-wrapper">
       <div class="footer-logo">
         <a href="index.html" class="footer-logo__link">
           <svg width="102" height="35" viewBox="0 0 102 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -279,4 +321,5 @@
     </div>
   </footer>
 </body>
+<script src="./js/script.js"></script>
 </html>

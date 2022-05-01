@@ -1,8 +1,19 @@
 .wishes-section {
   background-color: #ffffff;
+  margin-bottom: 55px;
+
+  @media (min-width: 768px) {
+    padding-top: 50px;
+  }
 }
 
 .wishes-section__wrapper {
-  width: 1150px;
+  width: 90%;
+  min-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: 1150px) {
+    width: 80%;
+    max-width: 1150px;
+  }
 }

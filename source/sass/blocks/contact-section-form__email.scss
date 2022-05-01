@@ -1,3 +1,17 @@
+.contact-section-form__email {
+  padding: 0 30px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 1fr 6fr;
+  }
+}
+
 .contact-section-form__legend-email {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -7,6 +21,18 @@
   text-transform: uppercase;
   color: #63d1bb;
   display: block;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #63d1bb;
+    top: 50%;
+    left: 78px;
+    right: 0;
+  }
 
   @media (min-width: 768px) {
     display: none;

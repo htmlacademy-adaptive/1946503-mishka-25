@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url("/source/img/hero-mobile.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   position: relative;
   display: block;
@@ -7,13 +7,13 @@
   background-color: #f9f9f9f9;
 
   @media (min-width: 768px) {
-    background-image: url("/source/img/hero-tablet.jpg");
+    background-image: url("../img/hero-tablet.jpg");
     background-position: top;
     background-color: #f9f9f9f9;
   }
 
   @media (min-width: 1150px) {
-    background-image: url("/source/img/hero-desktop.jpg");
+    background-image: url("../img/hero-desktop.jpg");
     margin-bottom: 54px;
     background-color: #f9f9f9f9;
   }
