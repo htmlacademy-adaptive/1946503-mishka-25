@@ -1,8 +1,16 @@
 .color-section {
-  background-color: #f1f1f1;
+  @media (min-width: 768px) {
+    background-color: #f1f1f1;
+  }
 }
 
 .color-section__wrapper {
-  width: 1150px;
+  width: 90%;
+  min-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: 1150px) {
+    width: 80%;
+    max-width: 1150px;
+  }
 }

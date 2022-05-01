@@ -1,15 +1,58 @@
 .form-top {
   background-color: #f1f1f1;
-  outline: 1px solid #ff0000;
+  min-height: 177px;
+  margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 98px;
+  }
 }
 
 .form-top__wrapper {
-  width: 1150px;
+  width: 87%;
   margin: 0 auto;
+  max-width: 1150px;
 }
 
 .border-bottom-image {
   @media (max-width: 767px) {
     display: none;
+  }
+}
+
+.form-top__title {
+  padding-top: 53px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-bottom: 75px;
+  }
+}
+
+.form-section__description {
+  margin: 0;
+  padding: 0 29px;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin-bottom: 63px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+    width: 90%;
+  }
+
+  @media (min-width: 1150px) {
+    width: 75%;
+    margin-left: 15%;
+    margin-bottom: 62px;
   }
 }

@@ -1,8 +1,39 @@
 .contact-section {
-  background-color: #f1f1f1;
+  @media (min-width: 768px) {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+  }
 }
 
 .contact-section__wrapper {
-  width: 1150px;
+  width: 90%;
+  min-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: 1150px) {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+
+.phone-elements-button,
+.email-elements-button {
+  width: 100%;
+  margin-bottom: 35px;
+  border: none;
+  box-shadow: inset 0 -2px 0 #000000;
+  padding: 17px 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: 768px) {
+    background-color: inherit;
+  }
+
+  @media (min-width: 1150px) {
+    width: 85%;
+  }
 }
