@@ -138,6 +138,13 @@ fieldset {
   background-position: center top;
   background-color: #f9f9f9f9;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 640px auto;
+    background-color: #ffffff;
+  }
+}
 @media (min-width: 768px) {
   .hero-section {
     background-image: url("../img/hero-tablet.jpg");
@@ -155,6 +162,13 @@ fieldset {
   .hero-section {
     background-image: url("../img/hero-desktop.jpg");
     margin-bottom: 54px;
+  }
+}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1150px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-size: 1150px auto;
+    background-color: #ffffff;
   }
 }
 
@@ -939,9 +953,23 @@ fieldset {
   list-style-type: none;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   .hero-nav__list {
     display: flex;
+  }
+}
+
+.tablet-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tablet-list {
+    display: flex;
+  }
+}
+@media (min-width: 1150px) {
+  .tablet-list {
+    display: none;
   }
 }
 
@@ -2052,6 +2080,7 @@ fieldset {
 @media (min-width: 768px) {
   .weeks-product-section__about {
     margin-bottom: 48px;
+    min-height: 90px;
   }
 }
 @media (min-width: 1150px) {
