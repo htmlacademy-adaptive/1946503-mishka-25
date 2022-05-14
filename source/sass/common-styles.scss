@@ -54,6 +54,7 @@ fieldset {
 }
 
 .description {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -75,13 +76,27 @@ fieldset {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
   color: #444444;
   text-decoration: none;
   border: 2px solid #444444;
   display: block;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #c7c7c7;
+  }
 }
 
 .container {
@@ -95,7 +110,7 @@ fieldset {
   }
 
   @media (min-width: 1150px) {
-    width: 90%;
+    width: 91.5%;
     max-width: 1150px;
     margin: 0 auto;
   }

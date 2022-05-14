@@ -1,10 +1,15 @@
 .weeks-product-section__about {
+  margin: 0;
+  margin-bottom: 19px;
+
   @media (min-width: 768px) {
-    margin-bottom: 48px;
+    padding-right: 30px;
+    margin-bottom: 38px;
     min-height: 90px;
   }
 
   @media (min-width: 1150px) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    padding: 0;
   }
 }

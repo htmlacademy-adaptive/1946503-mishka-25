@@ -1,14 +1,22 @@
 .weeks-product-section {
   background-color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 73px;
+  }
 }
 
 .weeks-product-section__wrapper {
-  padding: 30px 30px 0 30px;
+  padding: 31px 30px 0 30px;
 
   @media (min-width: 768px) {
     position: relative;
-    padding: 30px 30px 0 0;
+    padding: 55px 25px 0 0;
   }
 
   @media (min-width: 1150px) {
@@ -23,7 +31,7 @@
 
   @media (min-width: 1150px) {
     width: 300px;
-    margin-left: 160px;
+    margin-left: 176px;
   }
 }
 
@@ -32,18 +40,23 @@
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #63d1bb;
   display: block;
 
   @media (min-width: 768px) {
+    font-size: 17px;
+    line-height: 17px;
     width: 75px;
+    text-align: center;
+    padding-top: 5px;
   }
 
   @media (min-width: 1150px) {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 45px;
+    margin-right: 56px;
+    margin-top: 4px;
   }
 }
 
@@ -56,21 +69,22 @@
   color: #444444;
   display: block;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
-  @media (min-width: 1150px) {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
+  @media (min-width: 768px) {
+    padding-right: 33px;
     font-size: 20px;
     line-height: 24px;
-    color: #444444;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-right: 8px;
   }
 }
 
 .week-product-section__images {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -87,7 +101,21 @@
 }
 
 .weeks-product-section__button {
-  padding: 14px 83px;
-  max-width: 90px;
+  padding: 14px 81px;
+  max-width: 95px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 14px 97px;
+  }
+
+  @media (min-width: 1150px) {
+    max-width: 91px;
+    padding: 14px 99px;
+  }
+}
+
+.weeks-product-section__title {
+  margin-bottom: 5px;
 }

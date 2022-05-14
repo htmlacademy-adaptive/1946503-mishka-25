@@ -3,22 +3,43 @@
   min-height: 177px;
   margin-bottom: 30px;
 
+  @media (min-width: 768px) {
+    margin-bottom: 67px;
+  }
+
   @media (min-width: 1150px) {
     margin-bottom: 110px;
   }
 }
 
 .catalog-top__title {
-  padding-top: 53px;
+  padding-top: 74px;
   text-align: center;
+  font-size: 27px;
+  line-height: 30px;
 
   @media (min-width: 768px) {
-    padding-bottom: 75px;
+    padding-top: 56px;
+    padding-bottom: 63px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 80px;
   }
 }
 
 .border-bottom-image {
   @media (min-width: 768px) {
     display: block;
+  }
+}
+
+.hero-nav__tablet-wrapper {
+  @media (min-width: 768px) {
+    padding-top: 20px;
   }
 }

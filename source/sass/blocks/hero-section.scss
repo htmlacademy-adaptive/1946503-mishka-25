@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   position: relative;
   display: block;
-  background-position: center top;
+  background-position: center -16px;
   background-color: #f9f9f9f9;
 
   @media (min-resolution: 2dppx) {
@@ -15,6 +15,8 @@
   @media (min-width: 768px) {
     background-image: url("../img/hero-tablet.jpg");
     background-color: #f9f9f9f9;
+    padding-top: 20px;
+    background-position: top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -25,7 +27,7 @@
 
   @media (min-width: 1150px) {
     background-image: url("../img/hero-desktop.jpg");
-    margin-bottom: 54px;
+    margin-bottom: 11px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -38,15 +40,26 @@
 .hero-title {
   padding: 73px 20px 120px;
   text-align: center;
+  font-size: 27px;
+  line-height: 30px;
 
   @media (min-width: 768px) {
-    width: 460px;
-    padding: 109px 0 325px 0;
+    width: 500px;
+    padding: 111px 0 371px 0;
     margin: 0 auto;
+    font-size: 43px;
+    line-height: 50px;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: 1150px) {
+    width: 615px;
+    padding: 111px 0 357px 0;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

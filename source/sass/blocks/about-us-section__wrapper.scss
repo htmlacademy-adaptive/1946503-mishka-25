@@ -2,13 +2,26 @@
   padding: 0 30px;
   margin-bottom: 28px;
 
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
   @media (min-width: 1150px) {
-    padding: 0 160px;
+    padding: 0 176px;
+    margin-bottom: 34px;
   }
 }
 
 .about-us-section__title {
   margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 39px;
+  }
 }
 
 .contacts-section-button__hidden {
@@ -16,8 +29,8 @@
 
   @media (min-width: 1150px) {
     display: block;
-    padding: 16px 38px;
-    max-width: 150px;
-    margin: 0 auto;
+    padding: 14px 36px;
+    max-width: 154px;
+    margin: 0 113px;
   }
 }

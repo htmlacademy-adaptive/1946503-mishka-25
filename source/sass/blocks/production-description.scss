@@ -6,7 +6,7 @@
 
 .production-description__wrapper {
   @media (min-width: 768px) {
-    padding: 41px 42px 46px 42px;
+    padding: 38px 42px 46px 42px;
   }
 
   @media (min-width: 1150px) {
@@ -17,6 +17,7 @@
 .production-title {
   @media (min-width: 768px) {
     display: flex;
+    margin-bottom: 24px;
   }
 
   @media (min-width: 1150px) {
@@ -36,12 +37,15 @@
 
   @media (min-width: 768px) {
     width: max-content;
+    padding-top: 3px;
     padding-left: 33px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   @media (min-width: 1150px) {
     width: min-content;
-    padding: 27px 0;
+    padding: 28px 0 5px;
   }
 }
 

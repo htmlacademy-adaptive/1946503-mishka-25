@@ -1,7 +1,11 @@
 .contact-section {
   @media (min-width: 768px) {
     background-color: #f1f1f1;
-    padding: 50px 0;
+    padding: 50px 0 15px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 52px 0 15px;
   }
 }
 
@@ -9,20 +13,23 @@
   width: 90%;
   min-width: 320px;
   margin: 0 auto;
+  max-width: 1150px;
+
+  @media (min-width: 768px) {
+    width: 87%;
+  }
 
   @media (min-width: 1150px) {
-    width: 80%;
-    max-width: 1150px;
+    width: 81%;
   }
 }
 
 .phone-elements-button,
 .email-elements-button {
   width: 100%;
-  margin-bottom: 35px;
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
-  padding: 17px 0;
+  padding: 19px 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,7 +37,11 @@
   line-height: 18px;
 
   @media (min-width: 768px) {
+    width: 96%;
     background-color: inherit;
+    padding: 7px 0 16px 19px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   @media (min-width: 1150px) {

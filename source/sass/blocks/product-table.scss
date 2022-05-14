@@ -2,4 +2,18 @@
   border-collapse: collapse;
   margin: 0;
   width: 100%;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1150px) {
+    width: 97%;
+  }
+}
+
+.product-table__description-parameters {
+  @media (min-width: 1150px) {
+    width: 95px;
+  }
 }

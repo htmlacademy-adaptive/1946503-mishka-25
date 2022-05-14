@@ -4,6 +4,7 @@
 
   @media (min-width: 768px) {
     padding-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -11,9 +12,13 @@
   width: 90%;
   min-width: 320px;
   margin: 0 auto;
+  max-width: 1150px;
+
+  @media (min-width: 768px) {
+    width: 87%;
+  }
 
   @media (min-width: 1150px) {
-    width: 80%;
-    max-width: 1150px;
+    width: 81%;
   }
 }

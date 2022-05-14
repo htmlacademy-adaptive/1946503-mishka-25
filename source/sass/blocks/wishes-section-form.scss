@@ -22,6 +22,10 @@
   @media (max-width: 767px) {
     display: none;
   }
+
+  @media (min-width: 768px) {
+    padding-top: 20px;
+  }
 }
 
 .wishes-section-form__wrapper {
@@ -32,7 +36,8 @@
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 12.4% 75%;
+    margin-bottom: 49px;
   }
 }
 
@@ -45,8 +50,8 @@
   }
 
   @media (min-width: 1150px) {
-    width: 72%;
-    margin-left: 14.5%;
+    width: 75%;
+    margin-left: 12.5%;
   }
 }
 
@@ -68,27 +73,50 @@
 
 .wishes-section-form__textarea {
   width: 100%;
+  height: 142px;
   border: 2px solid #444444;
-  padding: 0;
+  padding: 15px 0 0 15px;
   box-sizing: border-box;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    font-size: 19px;
   }
 
   @media (min-width: 1150px) {
-    width: 85%;
+    width: 100%;
+  }
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+    box-shadow: inset 0 -2px 0 #000000;
   }
 }
 
 .wishes-section-button {
   margin: 0 auto;
-  padding: 14px 45px;
+  padding: 15px 45px;
+  font-size: 17px;
+  line-height: 16px;
   background-color: inherit;
 
   @media (min-width: 768px) {
-    padding: 14px 30px;
+    padding: 16px 30px;
     margin: 0;
   }
 }
@@ -105,5 +133,7 @@
 
   @media (min-width: 768px) {
     margin: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }

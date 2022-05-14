@@ -3,7 +3,11 @@
   margin-bottom: 38px;
 
   @media (min-width: 768px) {
-    margin-bottom: 68px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 65px;
   }
 }
 
@@ -14,6 +18,8 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+  display: inline-block;
+  margin-bottom: 6px;
 
   &-usermail {
     font-family: "Open Sans", sans-serif;

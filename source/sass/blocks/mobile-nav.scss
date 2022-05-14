@@ -15,8 +15,8 @@
 
 .mobile-nav__toggle {
   position: absolute;
-  top: -65px;
-  right: 40px;
+  top: -61px;
+  right: 38px;
   z-index: 2;
   display: block;
   width: 26px;
@@ -29,11 +29,11 @@
 .mobile-nav--closed .mobile-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 14px;
   width: 20px;
   height: 2px;
   background-color: #000000;
-  box-shadow: 0 5px 0 0 #000000, 0 10px 0 0 #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
 .mobile-nav--opened {
@@ -104,4 +104,5 @@
 .mobile-nav__opened-icon {
   position: absolute;
   left: 30px;
+  opacity: 0.3;
 }

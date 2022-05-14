@@ -1,26 +1,30 @@
 .contacts-section {
   background-color: #ffffff;
-  margin: 38px 0 40px 0;
+  margin: 23px 0 39px 0;
 
   @media (min-width: 768px) {
-    margin-top: 46px;
+    margin-top: 38px;
   }
 
   @media (min-width: 1150px) {
     display: flex;
-    width: 90%;
+    width: 91.5%;
     max-width: 1150px;
     margin: 0 auto;
-    margin-top: 71px;
-    margin-bottom: 105px;
+    margin-top: 67px;
+    margin-bottom: 58px;
   }
 }
 
 .contacts-section__wrapper {
+  @media (min-width: 768px) {
+    margin-bottom: 47px;
+  }
+
   @media (min-width: 1150px) {
     width: 460px;
     margin-top: 62px;
-    margin-left: 15px;
+    margin-left: 64px;
   }
 }
 
@@ -29,12 +33,14 @@
 }
 
 .contacts-section-button {
-  max-width: 150px;
+  max-width: 159px;
   margin: 0 auto;
-  padding: 14px 53px;
+  padding: 14px 49px;
 
   @media (min-width: 768px) {
     margin-bottom: 57px;
+    max-width: 154px;
+    padding: 14px 36px;
   }
 
   @media (min-width: 1150px) {
@@ -43,16 +49,26 @@
 }
 
 .contacts-section__adress-wrapper {
-  padding: 0 30px;
+  padding: 0 26px;
+  margin-bottom: 59px;
 
   @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
     padding: 0;
+    margin-bottom: 0;
+    margin-left: -2px;
+
+    & tbody {
+      display: flex;
+
+      @media (min-width: 1150px) {
+        flex-direction: column;
+      }
+    }
   }
 
   @media (min-width: 1150px) {
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 81px;
+    margin-left: 0;
   }
 }

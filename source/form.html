@@ -31,10 +31,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Новые поступления</a>
+              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Распродажа</a>
+              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@
                 </svg>
                   <span class="visually-hidden">Иконка корзины</span>
               </a>
-              Корзина: пока пуста
+              <span>Корзина: пока пуста</span>
             </li>
           </ul>
         </div>
@@ -138,7 +138,7 @@
 
     <form action="https://echo.htmlacademy.ru" class="form-section" method="post">
       <div class="form-section__description-wrapper">
-        <p class="description form-section__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="description form-section__description">Мы будем рады воплотить в жизнь<br> ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form-section-type">
           <span class="legend-title form-section-type__title">тип</span>
           <legend class="legend-title form-section-type__legend">тип</legend>
@@ -232,11 +232,17 @@
             <span class="legend-title contact-section-form__phone-title">тел</span>
             <label for="phone-form" class="legend-title contact-section-form__legend-phone">тел</label>
             <input type="tel" name="phone" class="phone-elements-button" id="phone-form" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="phone-elements-button__icon" width="25" height="24">
+              <use href="./img/sprite.svg#phone-form-icon"></use>
+            </svg>
           </fieldset>
           <fieldset class="contact-section-form__email">
             <span class="legend-title contact-section-form__email-title">e-mail</span>
             <label for="email-form" class="legend-title contact-section-form__legend-email">e-mail</label>
             <input type="email" name="email" class="email-elements-button" id="email-form" placeholder="Ваш Email*" required>
+            <svg class="mail-elements-button__icon" width="32" height="21">
+              <use href="./img/sprite.svg#mail-form-icon"></use>
+            </svg>
           </fieldset>
         </div>
       </section>
@@ -246,7 +252,7 @@
             <div class="wishes-section-form__wrapper">
               <span class="legend-title wishes-section-form__title">доп</span>
             <legend class="legend-title wishes-section-form__legend">доп</legend>
-            <textarea class="wishes-section-form__textarea" name="wishes-text" cols="30" rows="10"></textarea>
+            <textarea class="wishes-section-form__textarea" name="wishes-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <div class="wishes-section-button__wrapper">
             <span class="description forms-desription">*Поля обязательны для заполнения</span>

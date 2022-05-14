@@ -3,32 +3,54 @@
 
   @media (min-width: 768px) {
     position: relative;
+    padding: 0;
     padding-bottom: 20px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: 1150px) {
-    padding-left: 174px;
+    padding-left: 175px;
+    padding-bottom: 67px;
   }
 }
 
 .reviews-slider-section__description {
+  margin-top: 16px;
   margin-bottom: 33px;
+  font-size: 15px;
+  line-height: 30px;
 
   @media (min-width: 768px) {
     position: inherit;
     margin-bottom: 61px;
+    font-size: 17px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 43px;
   }
 }
 
 .reviews__user {
   @media (min-width: 768px) {
     position: inherit;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 17px;
   }
 }
 
 .reviews__usermail {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+  font-size: 17px;
+  line-height: 24px;
 
   @media (min-width: 768px) {
     position: inherit;
@@ -41,19 +63,33 @@
   @media (min-width: 768px) {
     display: block;
     position: absolute;
-    left: 0;
+    left: -52px;
     top: 0;
     height: 100%;
+  }
+
+  @media (min-width: 1150px) {
+    left: 0;
   }
 }
 
 .reviews-slider-button__prev,
 .reviews-slider-button__next {
+  padding: 0;
   border: 1px solid #ececec;
   background-color: inherit;
-  width: 125px;
+  width: 130px;
   height: 52px;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews-slider-button__prev {
@@ -62,21 +98,31 @@
     padding: 0;
     right: 100px;
     bottom: 50px;
-    margin: 0;
     border: none;
     width: 60px;
+    margin: 0;
+  }
+
+  @media (min-width: 1150px) {
+    bottom: 98px;
   }
 }
 
 .reviews-slider-button__next {
+  margin-left: -5px;
+
   @media (min-width: 768px) {
     position: absolute;
     padding: 0;
     right: 15px;
     bottom: 50px;
-    margin: 0;
     border: none;
     width: 60px;
+    margin: 0;
+  }
+
+  @media (min-width: 1150px) {
+    bottom: 98px;
   }
 }
 
@@ -84,15 +130,19 @@
   max-width: 96px;
   margin: 0 auto;
   padding: 14px 80px;
-  margin-bottom: 45px;
 
   @media (min-width: 768px) {
     display: block;
     position: absolute;
     padding: 14px 38px;
     right: 0;
-    top: 80px;
+    top: 78px;
     margin: 0;
+  }
+
+  @media (min-width: 1150px) {
+    top: 79px;
+    padding: 14px 39px;
   }
 }
 
@@ -101,5 +151,10 @@
     position: inherit;
     padding-top: 83px;
     margin-bottom: 38px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 78px;
+    margin-bottom: 36px;
   }
 }

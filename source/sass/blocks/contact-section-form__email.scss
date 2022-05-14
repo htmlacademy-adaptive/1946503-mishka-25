@@ -1,5 +1,7 @@
 .contact-section-form__email {
+  position: relative;
   padding: 0 30px;
+  margin-bottom: 35px;
 
   @media (min-width: 768px) {
     display: grid;
@@ -8,7 +10,12 @@
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 12.3% 86.2%;
+  }
+
+  &:hover .mail-elements-button__icon {
+    fill: #62d1ba;
+    opacity: 1;
   }
 }
 
@@ -51,5 +58,25 @@
 
   @media (min-width: 768px) {
     display: inline-block;
+    padding-top: 15px;
+  }
+}
+
+.mail-elements-button__icon {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 32px;
+  height: 21px;
+  opacity: 0.3;
+
+  @media (min-width: 768px) {
+    top: 27%;
+    right: 3%;
+  }
+
+  @media (min-width: 1150px) {
+    right: 13%;
+    top: 25%;
   }
 }

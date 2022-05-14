@@ -65,7 +65,7 @@
                   </svg>
                     <span class="visually-hidden">Иконка корзины</span>
                 </a>
-                Корзина: пока пуста
+                <span>Корзина: пока пуста</span>
               </li>
             </ul>
           </div>
@@ -211,28 +211,28 @@
                 Экологически<br> чистые материалы
             </li>
             <li class="about-us-section__item">
-              <svg width="35" height="34">
-                <use href="img/sprite.svg#about-us-icon-thread"></use>
-                </svg>
-                Связано вручную<br> с любовью и умилением
-            </li>
-            <li class="about-us-section__item">
               <svg width="47" height="27">
                 <use href="img/sprite.svg#about-us-icon-money"></use>
                 </svg>
                 Скандинавский стиль<br> по российской цене
             </li>
             <li class="about-us-section__item">
-              <svg width="55" height="23">
-                <use href="img/sprite.svg#about-us-icon-rocket"></use>
-                </svg>
-                Поддержка отечественного<br> производителя
-            </li>
-            <li class="about-us-section__item">
               <svg width="34" height="27">
                 <use href="img/sprite.svg#about-us-icon-like"></use>
                 </svg>
                 Увеличивает лайки<br> на фотографиях
+            </li>
+            <li class="about-us-section__item">
+              <svg width="35" height="34">
+                <use href="img/sprite.svg#about-us-icon-thread"></use>
+                </svg>
+                Связано вручную<br> с любовью и умилением
+            </li>
+            <li class="about-us-section__item">
+              <svg width="55" height="23">
+                <use href="img/sprite.svg#about-us-icon-rocket"></use>
+                </svg>
+                Поддержка отечественного<br> производителя
             </li>
             <li class="about-us-section__item">
               <svg width="33" height="32">
@@ -252,7 +252,7 @@
           </picture>
           <h2 class="title reviews-slider-section__title">Отзывы</h2>
           <p class="description reviews-slider-section__description">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. <br>В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </p>
           <span class="reviews__user">Анастасия Красильникова</span>
           <span class="description reviews__usermail">@misssssiskras</span>
@@ -282,22 +282,24 @@
             <use href="img/sprite.svg#icon-flag"></use>
             </svg>
           </div>
-          <div class="contacts-section__adress-wrapper">
-            <div class="contacts-section__email">
-              <span class="contacts-section__text">e-mail:</span>
-              <a href="mailto:info@mimimishkashop.ru" class="contacts-email__link">info@mimimishkashop.ru</a>
-            </div>
-            <div class="contacts-section__adress">
-              <span class="contacts-section__text">адрес:</span>
-              <span class="contacts-section-adress__info">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
-            </div>
-          </div>
+          <table class="contacts-section__adress-wrapper">
+            <tr class="contacts-section__email">
+              <td class="contacts-section__text">e-mail:</td>
+              <td><a href="mailto:info@mimimishkashop.ru" class="contacts-email__link">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr class="contacts-section__adress">
+              <td class="contacts-section__text">адрес:</td>
+              <td class="contacts-section-adress__info">г. Санкт-Петербург <br> ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</td>
+            </tr>
+          </table>
           <a href="#" class="button contacts-section-button__hidden">Напишите нам</a>
         </div>
         <div class="contacts-map">
-          <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg x2">
-          <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg x2">
-          <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg" alt="Карта с расположением магазина">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg x2">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg x2">
+            <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg" alt="Карта с расположением магазина">
+          </picture>
         </div>
         <a href="#" class="button contacts-section-button">Напишите нам</a>
       </section>

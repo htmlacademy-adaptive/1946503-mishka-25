@@ -35,4 +35,39 @@
   @media (min-width: 1150px) {
     width: 18%;
   }
+
+  .footer__copyright-info {
+    @media (min-width: 768px) {
+      padding: 0 5px 5px 0;
+    }
+
+    @media (min-width: 1150px) {
+      padding-left: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.footer__copyright svg {
+  fill: #63d1bb;
+}
+
+.footer-logo svg {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }

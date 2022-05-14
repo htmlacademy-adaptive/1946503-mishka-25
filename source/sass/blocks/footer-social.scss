@@ -1,18 +1,18 @@
 .footer-social {
   width: 45%;
   margin: 0 auto;
-  padding: 30px 58px;
+  padding: 27px 58px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: 768px) {
-    width: 20%;
+    width: 22%;
     margin: 0;
     padding: 0;
     border: none;
   }
 
   @media (min-width: 1150px) {
-    width: 13%;
+    width: 14%;
   }
 }
 
@@ -22,4 +22,19 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 1150px) {
+    padding-left: 3px;
+  }
+}
+
+.footer-social__item svg {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }

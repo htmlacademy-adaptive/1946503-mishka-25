@@ -1,12 +1,12 @@
 .week-product-section__parameters {
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 
   @media (min-width: 768px) {
-    margin-bottom: 57px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: 1150px) {
-    margin-bottom: 110px;
+    margin-bottom: 113px;
   }
 }
 
@@ -18,8 +18,10 @@
   line-height: 20px;
   color: #444444;
   border-bottom: 1px solid #ececec;
+  height: 39px;
+
+  @media (min-width: 1150px) {
+    height: 40px;
+  }
 }
 
-.product-table__description-parameters {
-  padding: 5px 0;
-}
