@@ -51,10 +51,18 @@
   opacity: 0.2;
 }
 
+.user-nav__icon {
+  opacity: 0.2;
+}
+
 .user-nav__link {
   @media (min-width: 768px) {
     display: inline-block;
     padding: 35px 30px 29px 30px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 35px 31px 29px 31px;
   }
 }
 

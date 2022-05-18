@@ -118,4 +118,69 @@
 
 .weeks-product-section__title {
   margin-bottom: 5px;
+
+  @media (min-width: 1150px) {
+    z-index: 1;
+  }
+}
+
+.weeks-product-section__wrapper-title {
+  margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: 1150px) {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding-top: 123px;
+    margin-bottom: 32px;
+  }
+}
+
+.weeks-product-section__about {
+  margin: 0;
+  margin-bottom: 19px;
+
+  @media (min-width: 768px) {
+    padding-right: 30px;
+    margin-bottom: 38px;
+    min-height: 90px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+}
+
+.weeks-product-section__description-parameters {
+  margin-bottom: 31px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 113px;
+  }
+}
+
+.product-table__description {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  border-bottom: 1px solid #ececec;
+  height: 39px;
+
+  @media (min-width: 1150px) {
+    height: 40px;
+  }
 }
