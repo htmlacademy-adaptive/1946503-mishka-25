@@ -1,4 +1,4 @@
-.contact-section-form__email {
+.contact-section__form-email {
   position: relative;
   padding: 0 30px;
   margin-bottom: 35px;
@@ -13,13 +13,13 @@
     grid-template-columns: 12.3% 86.2%;
   }
 
-  &:hover .mail-elements-button__icon {
+  &:hover .contact-section__form-email-icon {
     fill: #62d1ba;
     opacity: 1;
   }
 }
 
-.contact-section-form__legend-email {
+.contact-section__form-email-legend {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -46,7 +46,7 @@
   }
 }
 
-.contact-section-form__email-title {
+.contact-section__form-email-title {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -62,7 +62,7 @@
   }
 }
 
-.mail-elements-button__icon {
+.contact-section__form-email-icon {
   position: absolute;
   top: 50%;
   right: 10%;

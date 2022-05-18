@@ -81,17 +81,6 @@
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
-.mobile-nav--closed .site-list__item,
-.mobile-nav--closed .user-list__item {
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-
-.mobile-nav--nojs .mobile-nav__toggle {
-  display: none;
-}
-
 .mobile-nav--nojs .mobile-nav__wrapper {
   position: static;
   min-height: 0;

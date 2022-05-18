@@ -77,10 +77,12 @@ gulp.src('source/img/*.svg')
 const sprite = () => {
 return gulp.src('source/img/*.svg')
 .pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
-}))
-.pipe(rename('sprites.svg'))
+.pipe(
+  svgstore({
+inlineSvg: true,
+})
+)
+.pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
 
@@ -108,7 +110,10 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'build',
+      serveStaticOptions: {
+        extensions: ["html"],
+      },
     },
     cors: true,
     notify: false,
@@ -138,11 +143,11 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  svg,
   gulp.parallel(
   styles,
   html,
   scripts,
-  svg,
   sprite,
   createWebp
   ),
@@ -154,11 +159,11 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+  svg,
   gulp.parallel(
   styles,
   html,
   scripts,
-  svg,
   sprite,
   createWebp
   ),

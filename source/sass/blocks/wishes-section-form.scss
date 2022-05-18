@@ -41,7 +41,7 @@
   }
 }
 
-.wishes-section-button__wrapper {
+.wishes-section-form__wrapper-button {
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
@@ -118,6 +118,10 @@
   @media (min-width: 768px) {
     padding: 16px 30px;
     margin: 0;
+  }
+
+  &:focus {
+    outline: 4px solid rgb(45 177 169);
   }
 }
 

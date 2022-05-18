@@ -85,6 +85,12 @@
   }
 }
 
+.header-logo img {
+  @media (min-width: 1150px) {
+    width: 149px;
+  }
+}
+
 .mobile-nav--nojs {
   display: none;
 }

@@ -76,7 +76,7 @@
   }
 }
 
-.checkbox__control-mark {
+.color-section-form__control-mark {
   position: absolute;
   left: 0;
   top: 0;
@@ -97,9 +97,13 @@
   &:active {
     border: 2px solid rgba(0, 0, 0, 0.3);
   }
+
+  &:focus {
+    outline: 4px solid rgb(45 177 169);
+  }
 }
 
-.checkbox-elements-button:checked + .checkbox__control-mark::before {
+.checkbox-elements-button:checked + .color-section-form__control-mark::before {
   content: "";
   background-image: url("../img/tick.svg");
   position: absolute;

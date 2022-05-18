@@ -1,4 +1,4 @@
-.contact-section-form__phone {
+.contact-section__form-phone {
   padding: 0 30px;
   position: relative;
   margin-bottom: 35px;
@@ -14,13 +14,13 @@
     grid-template-columns: 12.3% 86.2%;
   }
 
-  &:hover .phone-elements-button__icon {
+  &:hover .contact-section__form-phone-icon {
     fill: #62d1ba;
     opacity: 1;
   }
 }
 
-.contact-section-form__legend-phone {
+.contact-section__form-phone-legend {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -47,7 +47,7 @@
   }
 }
 
-.contact-section-form__phone-title {
+.contact-section__form-phone-title {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -74,7 +74,7 @@
   }
 }
 
-.phone-elements-button__icon {
+.contact-section__form-phone-icon {
   position: absolute;
   right: 12%;
   top: 43%;

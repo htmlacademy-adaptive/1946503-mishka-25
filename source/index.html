@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
@@ -41,6 +43,7 @@
           </div>
           <div class="header-logo">
             <a href="index.html" class="header-logo__link">
+              <span class="visually-hidden">Логотип магазина</span>
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/mishka-header-logo.svg" width="149" height="72">
                 <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="113" height="46">
@@ -166,7 +169,7 @@
               <p class="description weeks-product-section__about">
                 Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
               </p>
-              <div class="week-product-section__parameters">
+              <div class="weeks-product-section__description-parameters">
                 <table class="product-table">
                   <tr class="product-table__description">
                     <td class="product-table__description-parameters">Цвет:</td>
@@ -183,11 +186,11 @@
                 </table>
               </div>
             </div>
-            <div class="week-product-section__images">
+            <div class="weeks-product-section__images">
               <picture>
-                <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop.jpg 1x, ./img/triple-set-desktop@2x.jpg x2">
-                <source media="(min-width: 768px)" srcset="./img/triple-set-tablet.jpg 1x, ./img/triple-set-tablet@2x.jpg x2">
-                <img src="./img/triple-set-mobile.jpg" srcset="./img/triple-set-mobile@2x.jpg" alt="Картинка вязания">
+                <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop.webp 1x, ./img/triple-set-desktop@2x.webp x2">
+                <source media="(min-width: 768px)" srcset="./img/triple-set-tablet.webp 1x, ./img/triple-set-tablet@2x.webp x2">
+                <img src="./img/triple-set-mobile.webp" srcset="./img/triple-set-mobile@2x.webp" alt="Картинка вязания">
               </picture>
             </div>
             <span class="weeks-product-section__price">Цена: 990 руб.</span>
@@ -247,21 +250,23 @@
       <section class="container reviews-slider-section">
         <div class="reviews-slider-section__wrapper">
           <picture>
-            <source media="(min-width: 1150px)" srcset="./img/review-desktop.jpg 1x, ./img/review-desktop@2x.jpg x2">
-            <img class="reviews-slider__image" src="./img/review-tablet.jpg" srcset="./img/review-tablet@2x.jpg" alt="Фотография вышевки">
+            <source media="(min-width: 1150px)" srcset="./img/review-desktop.webp 1x, ./img/review-desktop@2x.webp x2">
+            <img class="reviews-slider-section__image" src="./img/review-tablet.webp" srcset="./img/review-tablet@2x.webp" alt="Фотография вышевки">
           </picture>
           <h2 class="title reviews-slider-section__title">Отзывы</h2>
           <p class="description reviews-slider-section__description">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. <br>В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </p>
-          <span class="reviews__user">Анастасия Красильникова</span>
-          <span class="description reviews__usermail">@misssssiskras</span>
-          <button class="reviews-slider-button__prev">
+          <span class="reviews-slider-section__reviews-user">Анастасия Красильникова</span>
+          <span class="description reviews-slider-section__reviews-usermail">@misssssiskras</span>
+          <button class="reviews-slider-section__button-prev">
+            <span class="visually-hidden">Кнопка назад</span>
             <svg width="50" height="26">
               <use href="img/sprite.svg#slider-arrow-prev"></use>
             </svg>
           </button>
-          <button class="reviews-slider-button__next">
+          <button class="reviews-slider-section__button-next">
+            <span class="visually-hidden">Кнопка назад</span>
             <svg width="50" height="26">
               <use href="img/sprite.svg#slider-arrow-next"></use>
             </svg>
@@ -285,20 +290,20 @@
           <table class="contacts-section__adress-wrapper">
             <tr class="contacts-section__email">
               <td class="contacts-section__text">e-mail:</td>
-              <td><a href="mailto:info@mimimishkashop.ru" class="contacts-email__link">info@mimimishkashop.ru</a></td>
+              <td><a href="mailto:info@mimimishkashop.ru" class="contacts-section__email-link">info@mimimishkashop.ru</a></td>
             </tr>
             <tr class="contacts-section__adress">
               <td class="contacts-section__text">адрес:</td>
-              <td class="contacts-section-adress__info">г. Санкт-Петербург <br> ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</td>
+              <td class="contacts-section__adress-info">г. Санкт-Петербург <br> ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</td>
             </tr>
           </table>
-          <a href="#" class="button contacts-section-button__hidden">Напишите нам</a>
+          <a href="#" class="button contacts-section__button-hidden">Напишите нам</a>
         </div>
         <div class="contacts-map">
           <picture>
-            <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg x2">
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg x2">
-            <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg" alt="Карта с расположением магазина">
+            <source media="(min-width: 1150px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp x2">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp x2">
+            <img src="./img/map-mobile.webp" srcset="./img/map-mobile@2x.webp" alt="Карта с расположением магазина">
           </picture>
         </div>
         <a href="#" class="button contacts-section-button">Напишите нам</a>
@@ -309,6 +314,7 @@
       <div class="container footer-wrapper">
         <div class="footer-logo">
           <a href="index.html" class="footer-logo__link">
+            <span class="visually-hidden">Логотип магазина</span>
             <svg width="102" height="35">
               <use href="img/sprite.svg#footer-shop-logo"></use>
               </svg>
@@ -321,7 +327,7 @@
                 <svg width="29" height="23">
                   <use href="img/sprite.svg#footer-social-icon-vk"></use>
                   </svg>
-                  <span class="visually-hidden">Иконка в контакте</span>
+                  <span class="visually-hidden">В контакте</span>
               </a>
             </li>
             <li class="footer-social__item">
@@ -329,7 +335,7 @@
                 <svg width="29" height="23">
                   <use href="img/sprite.svg#footer-social-icon-youtube"></use>
                   </svg>
-                  <span class="visually-hidden">Иконка youtube</span>
+                  <span class="visually-hidden">youtube</span>
               </a>
             </li>
             <li class="footer-social__item">
@@ -337,12 +343,13 @@
                 <svg width="29" height="23">
                   <use href="img/sprite.svg#footer-social-icon-telegram"></use>
                   </svg>
-                  <span class="visually-hidden">Иконка telegram</span>
+                  <span class="visually-hidden">telegram</span>
               </a>
             </li>
           </ul>
         </div>
-        <a href="#" class="footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
+          <span class="visually-hidden">Логотип академии</span>
           <span class="footer__copyright-info">Разработано</span>
           <svg width="27" height="35">
             <use href="img/sprite.svg#footer-academy-icon"></use>
@@ -350,7 +357,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal modal-container__close">
+    <div class="modal modal-container">
       <div class="modal-basket">
         <h2 class="modal-basket__title">Добавить в корзину</h2>
         <p class="modal-basket__options">Выберите размер:</p>

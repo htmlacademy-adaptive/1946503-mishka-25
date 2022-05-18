@@ -58,8 +58,9 @@
 
 .production-video__play-button {
   position: absolute;
-  top: 24%;
-  left: 27%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: none;
   width: 120px;
   height: 78px;
@@ -68,8 +69,6 @@
   @media (min-width: 768px) {
     width: 123px;
     height: 80px;
-    top: 41%;
-    left: 41%;
   }
 
   &:hover {
