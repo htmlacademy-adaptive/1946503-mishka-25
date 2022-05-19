@@ -21,6 +21,9 @@ export const styles = () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
+    ]))
+    .pipe(gulp.dest('build/css'))
+    .pipe(postcss([
       csso()
     ]))
     .pipe(rename('style.min.css'))
@@ -39,6 +42,9 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
+  .pipe(gulp.dest('build/js'))
+  .pipe(rename('script.min.js'))
+  .pipe(terser())
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
   }
