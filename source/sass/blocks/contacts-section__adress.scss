@@ -1,5 +1,4 @@
 .contacts-section__adress {
-  margin-bottom: 60px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -9,10 +8,37 @@
 
   @media (min-width: 768px) {
     width: 50%;
-    text-align: end;
+    display: flex;
+    text-align: start;
+    font-size: 17px;
   }
 
   @media (min-width: 1150px) {
-    padding-left: 150px;
+    width: 80%;
+    padding-left: 108px;
+  }
+}
+
+.contacts-section__adress .contacts-section__text {
+  padding-top: 26px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.contacts-section__adress-info {
+  padding-top: 26px;
+
+  @media (min-width: 768px) {
+    width: 70%;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  @media (min-width: 1150px) {
+    br {
+      display: none;
+    }
   }
 }

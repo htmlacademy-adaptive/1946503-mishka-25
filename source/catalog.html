@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
@@ -31,15 +33,16 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="catalog.html" class="main-nav__link">Новые поступления</a>
+                <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html" class="main-nav__link">Распродажа</a>
+                <a href="form.html" class="main-nav__link">Вязание на заказ</a>
               </li>
             </ul>
           </div>
           <div class="header-logo">
             <a href="index.html" class="header-logo__link">
+              <span class="visually-hidden">Логотип магазина</span>
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/mishka-header-logo.svg" width="149" height="72">
                 <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="113" height="46">
@@ -52,7 +55,7 @@
               <li class="user-nav__item">
                 <a href="#" class="user-nav__link">
                   <svg class="user-nav__icon" width="18" height="18">
-                    <use href="img/sprite.svg#user-nav-search"></use>
+                    <use href="img/sprite.svg#search"></use>
                   </svg>
                     <span class="visually-hidden">Иконка поиска</span>
                 </a>
@@ -60,11 +63,11 @@
               <li class="user-nav__item">
                 <a href="#" class="user-nav__link">
                   <svg class="user-nav__icon" width="21" height="18">
-                    <use href="img/sprite.svg#user-nav-basket"></use>
+                    <use href="img/sprite.svg#cart"></use>
                   </svg>
                     <span class="visually-hidden">Иконка корзины</span>
                 </a>
-                Корзина: пока пуста
+                <span>Корзина: пока пуста</span>
               </li>
             </ul>
           </div>
@@ -108,7 +111,7 @@
     <main>
       <section class="catalog-top">
         <div class="container">
-          <div class="hero-nav">
+          <div class="hero-nav catalog-top__wrapper">
             <ul class="hero-nav__list">
               <li class="hero-nav__item">
                 <a href="#" class="hero-nav__link">Новые поступления</a>
@@ -141,9 +144,9 @@
             <li class="product-card__item">
               <a href="#" class="product-card__link">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="./img/product-card-1-desktop.jpg 1x, ./img/product-card-1-desktop@2.jpg x2">
-                  <source media="(min-width: 768px)" srcset="./img/product-card-1-tablet.jpg 1x, ./img/product-card-1-mobile@2.jpg x2">
-                  <img src="./img/product-card-1-mobile.jpg" srcset="./img/product-card-1-mobile-x2.jpg" alt="Зайчик-попрыгайчик">
+                  <source media="(min-width: 1150px)" srcset="./img/product-card-1-desktop.webp 1x, ./img/product-card-1-desktop@2.webp x2">
+                  <source media="(min-width: 768px)" srcset="./img/product-card-1-tablet.webp 1x, ./img/product-card-1-mobile@2.webp x2">
+                  <img src="./img/product-card-1-mobile.webp" srcset="./img/product-card-1-mobile-x2.webp" alt="Зайчик-попрыгайчик">
                 </picture>
               </a>
               <div class="product-card__item-description">
@@ -154,8 +157,8 @@
                 <div class="product-card__link-price">
                   <span class="product-card__price">1 200 руб.</span>
                   <a href="#" class="product-card__link-buy">
-                    <svg class="user-nav__icon" width="21" height="18">
-                      <use href="img/sprite.svg#user-nav-basket"></use>
+                    <svg class="product-card__link-buy-icon" width="21" height="18">
+                      <use href="img/sprite.svg#cart"></use>
                     </svg>
                   </a>
               </div>
@@ -164,9 +167,9 @@
             <li class="product-card__item">
               <a href="#" class="product-card__link">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="./img/product-card-2-desktop.jpg 1x, ./img/product-card-2-desktop@2.jpg x2">
-                  <source media="(min-width: 768px)" srcset="./img/product-card-2-tablet.jpg 1x, ./img/product-card-2-mobile@2.jpg x2">
-                  <img src="./img/product-card-2-mobile.jpg" srcset="./img/product-card-2-mobile-x2.jpg" alt="Корзинка для белья">
+                  <source media="(min-width: 1150px)" srcset="./img/product-card-2-desktop.webp 1x, ./img/product-card-2-desktop@2.webp x2">
+                  <source media="(min-width: 768px)" srcset="./img/product-card-2-tablet.webp 1x, ./img/product-card-2-mobile@2.webp x2">
+                  <img src="./img/product-card-2-mobile.webp" srcset="./img/product-card-2-mobile-x2.webp" alt="Корзинка для белья">
                 </picture>
               </a>
               <div class="product-card__item-description">
@@ -177,8 +180,8 @@
                 <div class="product-card__link-price">
                   <span class="product-card__price">690 руб.</span>
                   <a href="#" class="product-card__link-buy">
-                    <svg class="user-nav__icon" width="21" height="18">
-                      <use href="img/sprite.svg#user-nav-basket"></use>
+                    <svg class="product-card__link-buy-icon" width="21" height="18">
+                      <use href="img/sprite.svg#cart"></use>
                     </svg>
                   </a>
                 </div>
@@ -187,9 +190,9 @@
             <li class="product-card__item">
               <a href="#" class="product-card__link">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="./img/product-card-3-desktop.jpg 1x, ./img/product-card-3-desktop@2.jpg x2">
-                  <source media="(min-width: 768px)" srcset="./img/product-card-3-tablet.jpg 1x, ./img/product-card-3-mobile@2.jpg x2">
-                  <img src="./img/product-card-3-mobile.jpg" srcset="./img/product-card-3-mobile-x2.jpg" alt="Большая корзинка для игрушек">
+                  <source media="(min-width: 1150px)" srcset="./img/product-card-3-desktop.webp 1x, ./img/product-card-3-desktop@2.webp x2">
+                  <source media="(min-width: 768px)" srcset="./img/product-card-3-tablet.webp 1x, ./img/product-card-3-mobile@2.webp x2">
+                  <img src="./img/product-card-3-mobile.webp" srcset="./img/product-card-3-mobile-x2.webp" alt="Большая корзинка для игрушек">
                 </picture>
               </a>
               <div class="product-card__item-description">
@@ -200,8 +203,8 @@
                 <div class="product-card__link-price">
                   <span class="product-card__price">1 500 руб.</span>
                   <a href="#" class="product-card__link-buy">
-                    <svg class="user-nav__icon" width="21" height="18">
-                      <use href="img/sprite.svg#user-nav-basket"></use>
+                    <svg class="product-card__link-buy-icon" width="21" height="18">
+                      <use href="img/sprite.svg#cart"></use>
                     </svg>
                   </a>
                 </div>
@@ -212,7 +215,7 @@
       </section>
       <section class="production">
         <div class="production-wrapper">
-          <div class="production-title__mobile">
+          <div class="production__title-mobile">
             <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M26.7504 10L32.7561 6V22L26.7504 18V10ZM24.7485 10V18C24.7485 20.2 22.9467 22 20.7447 22H4.7294C2.5273 22 0.725586 20.2 0.725586 18V10C0.725586 7.8 2.5273 6 4.7294 6H14.7389C14.7389 4.9 15.6398 4 16.7408 4V2H5.73035C5.12978 2 4.7294 1.6 4.7294 1C4.7294 0.4 5.12978 0 5.73035 0H17.7418C18.3424 0 18.7427 0.4 18.7427 1V4C19.8438 4 20.7447 4.9 20.7447 6C22.9467 6 24.7485 7.8 24.7485 10ZM12.737 10H4.7294V18H12.737V10ZM20.7447 11C20.7447 10.4 20.3443 10 19.7437 10H15.7399C15.1393 10 14.7389 10.4 14.7389 11C14.7389 11.6 15.1393 12 15.7399 12H19.7437C20.3443 12 20.7447 11.6 20.7447 11Z" fill="#63D1BB"/>
             </svg>
@@ -220,12 +223,12 @@
           </div>
           <div class="production-video">
             <picture>
-              <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg 1x, ./img/video-desktop@2x.jpg x2">
-              <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg x2">
-              <img src="./img/video-mobile.jpg" srcset="./img/video-mobile@2x.jpg" alt="Воспроизведение видео">
+              <source media="(min-width: 1150px)" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp x2">
+              <source media="(min-width: 768px)" srcset="./img/video-tablet.webp 1x, ./img/video-tablet@2x.webp x2">
+              <img src="./img/video-mobile.webp" srcset="./img/video-mobile@2x.webp" alt="Воспроизведение видео">
             </picture>
             <button type="button" class="production-video__play-button">
-              <svg width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="100%" height="100%" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M97.2707 18.1C97.2707 18.1 96.3699 11.1 93.4671 7.99997C89.8637 3.99997 85.7598 3.89995 83.9581 3.69995C70.6454 2.69995 50.6263 2.69995 50.6263 2.69995H50.5262C50.5262 2.69995 30.5072 2.69995 17.1945 3.69995C15.2927 3.89995 11.2889 3.99997 7.68543 7.99997C4.88277 11.1 3.88181 18.1 3.88181 18.1C3.88181 18.1 2.98096 26.3 2.98096 34.5V42.2C2.98096 50.4 3.88181 58.6 3.88181 58.6C3.88181 58.6 4.78267 65.6 7.68543 68.7C11.2889 72.7 16.0934 72.6 18.1954 73C25.8027 73.8 50.6263 74 50.6263 74C50.6263 74 70.6454 74 83.9581 73C85.8599 72.8 89.8637 72.7 93.4671 68.7C96.2698 65.6 97.2707 58.6 97.2707 58.6C97.2707 58.6 98.1716 50.4 98.1716 42.2V34.5C98.1716 26.3 97.2707 18.1 97.2707 18.1Z" fill="#63D1BB"/>
               <path d="M50.5262 76.8C49.5252 76.8 25.5023 76.5 17.8951 75.8H17.795H17.6949C17.3946 75.7 16.9943 75.7 16.5939 75.6C14.0915 75.3 9.387 74.7 5.78356 70.6C2.38032 67 1.37937 59.8 1.27927 59C1.27927 58.7 0.27832 50.5 0.27832 42.3V34.6C0.27832 26.3 1.17919 18.2 1.17919 17.9V17.8C1.27928 17 2.38033 9.89998 5.68348 6.19998C9.68729 1.79998 14.1916 1.30001 16.3937 1.10001C16.5939 1.10001 16.7941 1.1 16.8942 1H16.9943C30.3069 0 50.326 0 50.5262 0H50.6263C50.8265 0 70.8456 0 84.1582 1H84.2583C84.4585 1 84.5586 1.00001 84.7588 1.10001C86.9609 1.30001 91.4652 1.79998 95.469 6.19998C98.8722 9.79998 99.8732 17 99.9733 17.8C99.9733 18.1 100.974 26.3 100.974 34.6V42.3C100.974 50.6 100.073 58.7 99.9733 59V59.1C99.8732 59.9 98.7721 67.1 95.469 70.7C91.4652 75.1 86.9609 75.6 84.7588 75.8C84.5586 75.8 84.3584 75.8 84.2583 75.9H84.1582C70.8456 76.8 50.7264 76.8 50.5262 76.8ZM18.5958 70.4C26.1029 71.1 49.8255 71.4 50.6263 71.4C51.327 71.4 70.7455 71.4 83.6578 70.4C83.8579 70.4 84.0581 70.4 84.2583 70.3C86.06 70.1 88.8627 69.8 91.4652 67C93.2669 65 94.3679 60.1 94.5681 58.4C94.6682 57.9 95.469 50 95.469 42.3V34.6C95.469 26.8 94.5681 19 94.468 18.5C94.1677 16.1 93.0667 11.7 91.3651 10C88.7626 7.1 85.9599 6.89998 84.1582 6.69998C83.958 6.69998 83.7578 6.70001 83.5576 6.60001C70.4452 5.60001 50.7264 5.60001 50.5262 5.60001H50.4261C50.2259 5.60001 30.407 5.60001 17.3946 6.60001C17.1944 6.60001 16.9942 6.59998 16.7941 6.69998C14.9923 6.89998 12.1897 7.2 9.5872 10C7.78549 12 6.68443 16.9 6.48424 18.6C6.38415 19.2 5.58338 27 5.58338 34.7V42.4C5.58338 50.1 6.48424 58 6.48424 58.5C6.78453 60.9 7.88558 65.3 9.5872 67C11.8894 69.6 14.8923 70 17.0944 70.3C17.6949 70.2 18.0953 70.3 18.5958 70.4Z" fill="white"/>
               <path d="M38.6147 20.5V56.2L68.4431 38.4L38.6147 20.5Z" fill="white"/>
@@ -236,7 +239,7 @@
             <div class="production-description__wrapper">
               <div class="production-title">
                 <svg width="33" height="22">
-                  <use href="img/sprite.svg#camera-icon"></use>
+                  <use href="img/sprite.svg#video-camera-icon"></use>
                 </svg>
                 <h3 class="production__description-title">Процесс производства</h3>
               </div>
@@ -252,8 +255,9 @@
       <div class="container footer-wrapper">
         <div class="footer-logo">
           <a href="index.html" class="footer-logo__link">
+            <span class="visually-hidden">Логотип магазина</span>
             <svg width="102" height="35">
-              <use href="img/sprite.svg#footer-shop-logo"></use>
+              <use href="img/sprite.svg#logo-footer"></use>
               </svg>
           </a>
         </div>
@@ -262,38 +266,57 @@
             <li class="footer-social__item">
               <a href="https://vk.com" class="footer-social__link">
                 <svg width="29" height="23">
-                  <use href="img/sprite.svg#footer-social-icon-vk"></use>
+                  <use href="img/sprite.svg#vkontakte-icon"></use>
                   </svg>
-                  <span class="visually-hidden">Иконка в контакте</span>
+                  <span class="visually-hidden">В контакте</span>
               </a>
             </li>
             <li class="footer-social__item">
               <a href="https://www.youtube.com" class="footer-social__link">
                 <svg width="29" height="23">
-                  <use href="img/sprite.svg#footer-social-icon-youtube"></use>
+                  <use href="img/sprite.svg#youtube-icon"></use>
                   </svg>
-                  <span class="visually-hidden">Иконка youtube</span>
+                  <span class="visually-hidden">youtube</span>
               </a>
             </li>
             <li class="footer-social__item">
               <a href="https://telegram.org" class="footer-social__link">
                 <svg width="29" height="23">
-                  <use href="img/sprite.svg#footer-social-icon-telegram"></use>
+                  <use href="img/sprite.svg#telegram-icon"></use>
                   </svg>
-                  <span class="visually-hidden">Иконка telegram</span>
+                  <span class="visually-hidden">telegram</span>
               </a>
             </li>
           </ul>
         </div>
-        <a href="#" class="footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright">
+          <span class="visually-hidden">Логотип академии</span>
           <span class="footer__copyright-info">Разработано</span>
           <svg width="27" height="35">
-            <use href="img/sprite.svg#footer-academy-icon"></use>
+            <use href="img/sprite.svg#htmlacademy-icon"></use>
             </svg>
         </a>
       </div>
     </footer>
 
+    <div class="modal modal-container">
+      <div class="modal-basket">
+        <h2 class="modal-basket__title">Добавить в корзину</h2>
+        <p class="modal-basket__options">Выберите размер:</p>
+        <ul class="modal-basket__list">
+          <li class="modal-basket__item">
+            <button type="button" class="modal-basket__item-button">s</button>
+          </li>
+          <li class="modal-basket__item">
+            <button type="button" class="modal-basket__item-button">m</button>
+          </li>
+          <li class="modal-basket__item">
+            <button type="button" class="modal-basket__item-button">l</button>
+          </li>
+        </ul>
+        <button type="button" class="modal-basket__button">Добавить</button>
+      </div>
+    </div>
   </body>
   <script src="./js/script.js"></script>
 </html>

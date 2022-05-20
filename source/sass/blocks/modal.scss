@@ -1,0 +1,105 @@
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+}
+
+.modal-basket {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  margin: auto;
+
+  @media (min-width: 768px) {
+    width: 556px;
+  }
+}
+
+.modal-basket__title {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.modal-basket__options {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.modal-basket__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+  margin: auto;
+  margin-bottom: 31px;
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+}
+
+.modal-basket__item-button {
+  padding: 0;
+  width: 82px;
+  height: 52px;
+  background-color: inherit;
+  border: 2px solid hsl(0, 0%, 27%, 0.1);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+
+  @media (min-width: 768px) {
+    width: 112px;
+  }
+}
+
+.modal-basket__button {
+  display: block;
+  width: 100%;
+  height: 52px;
+  background: #63d1bb;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+}

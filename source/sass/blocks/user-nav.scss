@@ -27,11 +27,49 @@
   @media (min-width: 768px) {
     border-left: 1px solid #ececec;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover svg {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active svg {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
+.user-nav__item:hover span {
+  opacity: 0.6;
+}
+
+.product-card__link-buy-icon {
+  opacity: 0.2;
+}
+
+.user-nav__icon {
+  opacity: 0.2;
 }
 
 .user-nav__link {
   @media (min-width: 768px) {
     display: inline-block;
-    padding: 30px 32px;
+    padding: 35px 30px 29px 30px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 35px 31px 29px 31px;
+  }
+}
+
+
+.user-nav__item span {
+  @media (min-width: 1150px) {
+    display: inline-block;
+    padding-right: 3px;
   }
 }

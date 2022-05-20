@@ -1,5 +1,7 @@
-.contact-section-form__email {
+.contact-section__form-email {
+  position: relative;
   padding: 0 30px;
+  margin-bottom: 35px;
 
   @media (min-width: 768px) {
     display: grid;
@@ -8,11 +10,16 @@
   }
 
   @media (min-width: 1150px) {
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 12.3% 86.2%;
+  }
+
+  &:hover .contact-section__form-email-icon {
+    fill: #62d1ba;
+    opacity: 1;
   }
 }
 
-.contact-section-form__legend-email {
+.contact-section__form-email-legend {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -39,7 +46,7 @@
   }
 }
 
-.contact-section-form__email-title {
+.contact-section__form-email-title {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -51,5 +58,25 @@
 
   @media (min-width: 768px) {
     display: inline-block;
+    padding-top: 15px;
+  }
+}
+
+.contact-section__form-email-icon {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 32px;
+  height: 21px;
+  opacity: 0.2;
+
+  @media (min-width: 768px) {
+    top: 27%;
+    right: 3%;
+  }
+
+  @media (min-width: 1150px) {
+    right: 13%;
+    top: 25%;
   }
 }
