@@ -16,7 +16,7 @@
 }
 
 .legend-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -47,7 +47,7 @@
 }
 
 .form-section-type__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -72,7 +72,7 @@
 .form-section-type__label,
 .color-section-form__checkbox-label,
 .username-section-form__label {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -156,8 +156,9 @@
 .type-radio-button:checked + .form-section-type__control-mark::before {
   content: "";
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
   background-color: #62d1ba;
