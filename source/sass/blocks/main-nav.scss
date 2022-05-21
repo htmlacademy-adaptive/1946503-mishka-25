@@ -55,7 +55,7 @@
 }
 
 .main-nav__link {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -89,8 +89,4 @@
   @media (min-width: 1150px) {
     width: 149px;
   }
-}
-
-.mobile-nav--nojs {
-  display: none;
 }

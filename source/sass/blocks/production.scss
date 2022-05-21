@@ -26,12 +26,12 @@
 
   @media (min-width: 1150px) {
     width: 91.5%;
-    max-width: 1150px;
+    max-width: 1050px;
     flex-direction: row;
   }
 }
 
-.production-title__mobile {
+.production__title-mobile {
   display: flex;
   align-items: center;
   justify-content: space-around;

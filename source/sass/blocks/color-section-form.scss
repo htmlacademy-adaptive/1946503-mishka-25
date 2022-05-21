@@ -30,7 +30,7 @@
 }
 
 .color-section-form__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -107,8 +107,9 @@
   content: "";
   background-image: url("../img/tick.svg");
   position: absolute;
-  left: 15%;
-  top: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 24px;
   height: 16px;
 
@@ -117,6 +118,10 @@
     width: 32px;
     height: 22px;
   }
+}
+
+.checkbox-elements-button:focus + .color-section-form__control-mark {
+  outline: 4px solid rgb(45 177 169);
 }
 
 .color-section-form__checkbox-label {

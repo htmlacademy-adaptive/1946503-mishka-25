@@ -12,7 +12,7 @@
 }
 
 .reviews__user {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -22,7 +22,7 @@
   margin-bottom: 6px;
 
   &-usermail {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -68,6 +68,15 @@
 }
 
 .reviews-slider-section__reviews-user {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
   @media (min-width: 768px) {
     position: inherit;
     font-size: 18px;

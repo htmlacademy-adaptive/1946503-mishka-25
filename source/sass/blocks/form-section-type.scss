@@ -16,7 +16,7 @@
 }
 
 .legend-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -47,7 +47,7 @@
 }
 
 .form-section-type__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -72,7 +72,7 @@
 .form-section-type__label,
 .color-section-form__checkbox-label,
 .username-section-form__label {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -151,17 +151,14 @@
   &:active {
     border: 2px solid rgba(0, 0, 0, 0.3);
   }
-
-  &:focus {
-    outline: 4px solid rgb(45 177 169);
-  }
 }
 
 .type-radio-button:checked + .form-section-type__control-mark::before {
   content: "";
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
   background-color: #62d1ba;
@@ -171,4 +168,8 @@
     width: 23px;
     height: 23px;
   }
+}
+
+.type-radio-button:focus + .form-section-type__control-mark {
+  outline: 4px solid rgb(45 177 169);
 }

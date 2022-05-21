@@ -71,7 +71,7 @@
   position: relative;
   display: block;
   padding: 27px 0 27px 76px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -94,4 +94,12 @@
   position: absolute;
   left: 30px;
   opacity: 0.3;
+}
+
+.mobile-nav--nojs .mobile-nav__toggle {
+  display: none;
+}
+
+.mobile-nav--closed .mobile-nav__list {
+  display: none;
 }

@@ -25,7 +25,7 @@ fieldset {
 }
 
 .title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -34,7 +34,7 @@ fieldset {
   margin: 0;
 
   @media (min-width: 768px) {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 43px;
@@ -43,7 +43,7 @@ fieldset {
   }
 
   @media (min-width: 1150px) {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 53px;
@@ -55,7 +55,7 @@ fieldset {
 
 .description {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -63,7 +63,7 @@ fieldset {
   color: #444444;
 
   @media (min-width: 768px) {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -73,7 +73,7 @@ fieldset {
 }
 
 .button {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
