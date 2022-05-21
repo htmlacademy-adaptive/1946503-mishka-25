@@ -151,10 +151,6 @@
   &:active {
     border: 2px solid rgba(0, 0, 0, 0.3);
   }
-
-  &:focus {
-    outline: 4px solid rgb(45 177 169);
-  }
 }
 
 .type-radio-button:checked + .form-section-type__control-mark::before {
@@ -171,4 +167,8 @@
     width: 23px;
     height: 23px;
   }
+}
+
+.type-radio-button:focus + .form-section-type__control-mark {
+  outline: 4px solid rgb(45 177 169);
 }

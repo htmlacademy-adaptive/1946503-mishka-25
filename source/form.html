@@ -89,7 +89,7 @@
             <li class="site-list__item">
               <a href="#">
                 <svg class="mobile-nav__opened-icon" width="18" height="18">
-                  <use href="img/sprite.svg#user-nav-search"></use>
+                  <use href="img/sprite.svg#search"></use>
                   </svg>
                 Поиск по сайту
               </a>
@@ -97,7 +97,7 @@
             <li class="site-list__item">
               <a href="#">
                 <svg class="mobile-nav__opened-icon" width="21" height="18">
-                  <use href="img/sprite.svg#user-nav-basket"></use>
+                  <use href="img/sprite.svg#cart"></use>
                   </svg>
                 Корзина: пока пуста
               </a>
@@ -144,7 +144,7 @@
         <p class="description form-section__description">Мы будем рады воплотить в жизнь<br> ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form-section-type">
           <span class="legend-title form-section-type__title">тип</span>
-          <legend class="legend-title form-section-type__legend">тип</legend>
+          <span class="legend-title form-section-type__legend">тип</span>
           <ul class="form-section-type__radio-list">
             <li class="form-section-type__radio-elements">
               <label class="form-section-type__label" for="type-accessory-button">Аксессуар для интерьера
@@ -165,7 +165,7 @@
         <div class="color-section__wrapper">
           <fieldset class="color-section-form">
             <span class="legend-title color-section-form__title">цвет</span>
-            <legend class="legend-title color-section-form__legend">цвет</legend>
+            <span class="legend-title color-section-form__legend">цвет</span>
             <ul class="color-section-form__checkbox-list">
               <li class="color-section-form__checkbox-elements">
                 <label for="color-white" class="color-section-form__checkbox-label">Белый
@@ -211,7 +211,7 @@
         <div class="username-section__wrapper">
           <fieldset class="username-section-form">
             <span class="legend-title username-section-form__title">фио</span>
-            <legend class="legend-title username-section-form__legend">фио</legend>
+            <span class="legend-title username-section-form__legend">фио</span>
             <ul class="username-section-form__list">
               <li class="username-section-form__elements">
                 <label for="name-form" class="username-section-form__label">Имя:</label>
@@ -232,8 +232,8 @@
       <section class="contact-section">
         <div class="contact-section__wrapper">
           <fieldset class="contact-section__form-phone">
-            <span class="legend-title contact-section__form-phone-title" alt="телефон">тел</span>
-            <label for="phone-form" class="legend-title contact-section__form-phone-legend" alt="телефон">тел</label>
+            <span class="legend-title contact-section__form-phone-title">тел</span>
+            <label for="phone-form" class="legend-title contact-section__form-phone-legend">тел</label>
             <input type="tel" name="phone" class="phone-elements-button" id="phone-form" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             <svg class="contact-section__form-phone-icon" width="25" height="24">
               <use href="./img/sprite.svg#phone-form-icon"></use>
@@ -253,9 +253,9 @@
         <div class="wishes-section__wrapper">
           <fieldset class="wishes-section-form">
             <div class="wishes-section-form__wrapper">
-              <span class="legend-title wishes-section-form__title" alt="дополнительное поле">доп</span>
-            <legend class="legend-title wishes-section-form__legend" alt="дополнительное поле">доп</legend>
-            <textarea class="wishes-section-form__textarea" name="wishes-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <span class="legend-title wishes-section-form__legend">доп</span>
+            <label class="legend-title wishes-section-form__title" for="textarea-wishes-text">доп</label>
+            <textarea class="wishes-section-form__textarea" name="wishes-text" cols="30" rows="10" id="textarea-wishes-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <div class="wishes-section-form__wrapper-button">
             <span class="description forms-desription">*Поля обязательны для заполнения</span>
@@ -334,6 +334,6 @@
       <button type="button" class="modal-basket__button">Добавить</button>
     </div>
   </div>
+  <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
 </html>

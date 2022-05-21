@@ -188,9 +188,12 @@
             </div>
             <div class="weeks-product-section__images">
               <picture>
-                <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop.webp 1x, ./img/triple-set-desktop@2x.webp x2">
-                <source media="(min-width: 768px)" srcset="./img/triple-set-tablet.webp 1x, ./img/triple-set-tablet@2x.webp x2">
-                <img src="./img/triple-set-mobile.webp" srcset="./img/triple-set-mobile@2x.webp" alt="Картинка вязания">
+                <source media="(min-width: 1150px)" type="image/webp" srcset="./img/triple-set-desktop.webp 1x, ./img/triple-set-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/triple-set-tablet.webp 1x, ./img/triple-set-tablet@2x.webp 2x">
+                <source media="(min-width: 0)" type="image/webp" srcset="./img/triple-set-mobile.webp 1x, ./img/triple-set-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/triple-set-tablet.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
+                <img src="./img/triple-set-mobile.jpg" srcset="./img/triple-set-mobile@2x.jpg" alt="Картинка вязания">
               </picture>
             </div>
             <span class="weeks-product-section__price">Цена: 990 руб.</span>
@@ -250,8 +253,10 @@
       <section class="container reviews-slider-section">
         <div class="reviews-slider-section__wrapper">
           <picture>
-            <source media="(min-width: 1150px)" srcset="./img/review-desktop.webp 1x, ./img/review-desktop@2x.webp x2">
-            <img class="reviews-slider-section__image" src="./img/review-tablet.webp" srcset="./img/review-tablet@2x.webp" alt="Фотография вышевки">
+            <source media="(min-width: 1150px)" type="image/webp" srcset="./img/review-desktop.webp 1x, ./img/review-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet.webp 1x, ./img/review-tablet@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="./img/review-desktop.jpg 1x, ./img/review-desktop@2x.jpg 2x">
+            <img class="reviews-slider-section__image" src="./img/review-tablet.jpg" srcset="./img/review-tablet@2x.jpg" alt="Фотография вышевки">
           </picture>
           <h2 class="title reviews-slider-section__title">Отзывы</h2>
           <p class="description reviews-slider-section__description">
@@ -301,12 +306,16 @@
         </div>
         <div class="contacts-map">
           <picture>
-            <source media="(min-width: 1150px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp x2">
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp x2">
-            <img src="./img/map-mobile.webp" srcset="./img/map-mobile@2x.webp" alt="Карта с расположением магазина">
+            <source media="(min-width: 1150px)" type="image/webp" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
+            <source media="(min-width: 0px)" type="image/webp" srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+            <img src="./img/map-mobile.jpg 1x" srcset="./img/map-mobile@2x.jpg 2x" type="image/webp">
           </picture>
           <iframe class="contacts-map__google-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426">
+        </iframe>
         </div>
         <a href="#" class="button contacts-section-button">Напишите нам</a>
       </section>
@@ -377,6 +386,6 @@
         <button type="button" class="modal-basket__button">Добавить</button>
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
-  <script src="./js/script.js"></script>
 </html>

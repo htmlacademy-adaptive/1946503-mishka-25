@@ -119,6 +119,10 @@
   }
 }
 
+.checkbox-elements-button:focus + .color-section-form__control-mark {
+  outline: 4px solid rgb(45 177 169);
+}
+
 .color-section-form__checkbox-label {
   @media (min-width: 768px) {
     padding-top: 13px;
